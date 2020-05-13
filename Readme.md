@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Гончаренко](https://up.htmlacademy.ru/htmlcss/28/user/356085).
-* Наставник: `[Роман Кушнир]` (https://htmlacademy.ru/profile/id485545).
+* Наставник: `[Роман Кушнир]`(https://htmlacademy.ru/profile/id485545).
 
 ---
 
