@@ -11,8 +11,12 @@
 <body>
     <header>
         <div class="header-top">
-            <a class="logo">Техномарт</a>
-            <!--Здесь будет поиск-->
+            <a class="logo"><span class="visually-hidden">Техномарт</span></a>
+            <!--Форма поиска-->
+            <form action="https://echo.htmlacademy.ru/courses" method="get">
+                <label for="form-search" class="visually-hidden">Поиск</label>
+                <input type="search" name="search" id="form-search">
+            </form>
             <a href="#!">Закладки: 0</a>
             <a href="#!">Корзина: 0</a>
             <a href="#!">Оформить заказ</a>
@@ -43,7 +47,8 @@
     <main>
         <!--Catds andSlider-->
         <section class="cards-and-slider">
-            <h5>Промо блок со слайдером</h5><!--Валидатор показывает, что в section рекомендовано добавлять заголовок, данный заголовок скрою средствами CSS-->
+            <h5 class="visually-hidden">Промо блок со слайдером</h5>
+            <!--Валидатор показывает, что в section рекомендовано добавлять заголовок, данный заголовок скрою средствами CSS-->
             <ul>
                 <li class="item">
                     <article>
@@ -54,14 +59,12 @@
                 </li>
                 <li class="item">
                     <article>
-                        <span>New</span><!---Нужен ли данный span если его нет на макете?-->
                         <h3>Инструмент</h3>
                         <a href="#!">на все случаи</a>
                     </article>
                 </li>
                 <li class="item">
                     <article>
-                        <span>New</span><!---Нужен ли данный span если его нет на макете?-->
                         <h3>Техника</h3>
                         <a href="#!">для стройки</a>
                     </article>
@@ -90,16 +93,14 @@
                 </li>
                 <li class="item">
                     <article>
-                        <span>New</span><!---Нужен ли данный span если его нет на макете?-->
                         <h3>Скидка 50%</h3>
-                                <a href="#!">на 350 товаров</a>
+                        <a href="#!">на 350 товаров</a>
                     </article>
                 </li>
                 <li class="item">
                     <article>
-                        <span>New</span><!---Нужен ли данный span если его нет на макете?-->
                         <h3>Доставка</h3>
-                                <a href="#!">бесплатно</a>
+                        <a href="#!">бесплатно</a>
                     </article>
                 </li>
             </ul>
@@ -111,8 +112,7 @@
             <ul>
                 <li>
                     <article>
-                        <img src="https://via.placeholder.com/150x100" width="184" height="164"
-                            alt="Перфоратор Bosch, модель BFG 9000">
+                        <img src="img/wire-hammer.png" width="184" height="164" alt="Перфоратор Bosch, модель BFG 9000">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
                         <del>32500 Р.</del>
                         <ins>25500 Р.</ins>
@@ -121,7 +121,7 @@
                 <li>
                     <article>
                         <span>New</span>
-                        <img src="https://via.placeholder.com/150x100" width="184" height="164"
+                        <img src="img/cordless-rotary-hammer-blue.png" width="184" height="164"
                             alt="Перфоратор Bosch, модель BFG 3000">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <del>22500 Р.</del>
@@ -130,7 +130,7 @@
                 </li>
                 <li>
                     <article>
-                        <img src="https://via.placeholder.com/150x100" width="184" height="164"
+                        <img src="img/cordless-rotary-hammer.png" width="184" height="164"
                             alt="Перфоратор Bosch, модель BFG 6000">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <del>30500 Р.</del>
@@ -140,7 +140,7 @@
                 <li>
                     <article>
                         <span>New</span>
-                        <img src="https://via.placeholder.com/150x100" width="184" height="164"
+                        <img src="img/cordless-rotary-hammer-blue.png" width="184" height="164"
                             alt="Перфоратор Bosch, модель BFG 2000">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <ins>12500 Р.</ins>
@@ -155,42 +155,42 @@
             <ul>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Bosch">
+                        <img src="img/bosch-banner.png" width="126" height="37" alt="Техника Bosch">
                     </a>
                 </li>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Makita">
+                        <img src="img/makita-banner.png" width="123" height="40" alt="Техника Makita">
                     </a>
                 </li>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Dewalt">
+                        <img src="img/dewalt-banner.png" width="146" height="44" alt="Техника Dewalt">
                     </a>
                 </li>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Интерскол">
+                        <img src="img/interscol-banner.png" width="200" height="88" alt="Техника Интерскол">
                     </a>
                 </li>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Hitachi">
+                        <img src="img/hitachi-banner.png" width="169" height="31" alt="Техника Hitachi">
                     </a>
                 </li>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Lg">
+                        <img src="img/lg-banner.png" width="121" height="73" alt="Техника Lg">
                     </a>
                 </li>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Aeg">
+                        <img src="img/aeg-banner.png" width="151" height="96" alt="Техника Aeg">
                     </a>
                 </li>
                 <li>
                     <a href="#!">
-                        <img src="https://via.placeholder.com/150x100" alt="Техника Metabo">
+                        <img src="img/metabo-banner.png" width="204" height="69" alt="Техника Metabo">
                     </a>
                 </li>
             </ul>
@@ -274,7 +274,7 @@
     </main>
     <footer>
         <div class="footer-top">
-            <a class="logo">Техномарт</a>
+            <a class="logo"><span class="visually-hidden">Техномарт</span></a>
             <div class="contact-tel">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -297,13 +297,13 @@
             <p>&copy; 2010–2019 Компания «Техномарт» Все права защищены</p>
             <ul class="socials">
                 <li>
-                    <a href="#!">Вконтакте</a>
+                    <a href="#!"><span class="visually-hidden">Вконтакте</span></a>
                 </li>
                 <li>
-                    <a href="#!">Фейсбук</a>
+                    <a href="#!"><span class="visually-hidden">Фейсбук</span></a>
                 </li>
                 <li>
-                    <a href="#!">Инстаграм</a>
+                    <a href="#!"><span class="visually-hidden">Инстаграм</span></a>
                 </li>
             </ul>
             <p>Обратная связь:
@@ -315,6 +315,27 @@
             </p>
         </div>
     </footer>
+
+    <section>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+            <label>
+                <ul>
+                    <li>
+                        <label for="order-name">Ваше имя:</label>
+                        <input type="text" name="name" id="order-name" placeholder="Имя Фамилия">
+                    </li>
+                    <li>
+                        <label for="order-email">Ваш e-mail:</label>
+                        <input type="email" name="email" id="order-email" placeholder="email@example.com">
+                    </li>
+                    <li>
+                        <label for="text-of-letter">Текст письма:</label>
+                        <textarea id="text-of-letter" placeholder="В свободной форме"></textarea>
+                    </li>
+                </ul>
+          </label>
+    </form>
+    </section>
 </body>
 
 </html>
