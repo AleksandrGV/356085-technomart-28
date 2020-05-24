@@ -55,7 +55,7 @@
     </ul>
     <section class="catalog">
       <h1>Перфораторы</h1>
-      <!--Здесь будет форма с фильтром-->
+      <!--Форма с фильтром-->
       <aside>
         <h2>Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -63,7 +63,7 @@
             <legend>Цена:</legend>
             <ul>
               <li>
-                
+
                 <input type="range" id="filter-price" name="price" min="0" max="30000" step="1">
               </li>
               <li>
@@ -106,12 +106,12 @@
             <ul>
               <li>
                 <!--У radio name должен быть один для всего блока-->
-                  <input type="radio" id="filter-rechargeable" name="power-production" value="rechargeable" checked>
-                  <label for="filter-rechargeable">Аккумуляторные</label>
+                <input type="radio" id="filter-rechargeable" name="power-production" value="rechargeable" checked>
+                <label for="filter-rechargeable">Аккумуляторные</label>
               </li>
               <li>
-                  <input type="radio" id="filter-network" name="power-production" value="network">
-                  <label for="filter-network">Сетевые</label>
+                <input type="radio" id="filter-network" name="power-production" value="network">
+                <label for="filter-network">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -216,7 +216,8 @@
         <li>
           <article>
             <span>New</span>
-            <img src="img/cordless-rotary-hammer-blue.png" width="144" height="128" alt="Перфоратор Bosch, модель BFG 2000">
+            <img src="img/cordless-rotary-hammer-blue.png" width="144" height="128"
+              alt="Перфоратор Bosch, модель BFG 2000">
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <span>12500 Р.</span>
           </article>
@@ -294,39 +295,39 @@
       </p>
     </div>
   </footer>
-<!--Попап, форма заказа-->
+  <!--Попап, форма заказа-->
   <section class="visually-hidden">
     <form action="https://echo.htmlacademy.ru" method="post">
-        <label>
-            <ul>
-                <li>
-                    <label for="order-name">Ваше имя:</label>
-                    <input type="text" name="name" id="order-name" placeholder="Имя Фамилия">
-                </li>
-                <li>
-                    <label for="order-email">Ваш e-mail:</label>
-                    <input type="email" name="email" id="order-email" placeholder="email@example.com">
-                </li>
-                <li>
-                    <label for="text-of-letter">Текст письма:</label>
-                    <textarea id="text-of-letter" placeholder="В свободной форме"></textarea>
-                </li>
-            </ul>
+      <label>
+        <ul>
+          <li>
+            <label for="order-name">Ваше имя:</label>
+            <input type="text" name="name" id="order-name" placeholder="Имя Фамилия">
+          </li>
+          <li>
+            <label for="order-email">Ваш e-mail:</label>
+            <input type="email" name="email" id="order-email" placeholder="email@example.com">
+          </li>
+          <li>
+            <label for="text-of-letter">Текст письма:</label>
+            <textarea id="text-of-letter" placeholder="В свободной форме"></textarea>
+          </li>
+        </ul>
       </label>
       <button type="submit">Оформить заказ</button>
-</form>
-<button type="button"><span class="visually-hidden">Закрыть</span></button>
-</section>
-<section class="visually-hidden">
+    </form>
+    <button type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+  <section class="visually-hidden">
     <div class="main-basket">
-        <p>Товар добавлен в корзину!</p>
-        <ul>
-            <li><a href="#!">Оформить заказ</a></li>
-            <li><a href="#!">Продолжить покупки</a></li>
-        </ul>
+      <p>Товар добавлен в корзину!</p>
+      <ul>
+        <li><a href="#!">Оформить заказ</a></li>
+        <li><a href="#!">Продолжить покупки</a></li>
+      </ul>
     </div>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
-</section>
+  </section>
 </body>
 
 </html>
