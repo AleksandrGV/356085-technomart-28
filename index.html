@@ -48,7 +48,6 @@
     <!--Catds andSlider-->
     <section class="cards-and-slider">
       <h5 class="visually-hidden">Промо блок со слайдером</h5>
-      <!--Валидатор показывает, что в section рекомендовано добавлять заголовок, данный заголовок скрою средствами CSS-->
       <ul>
         <li class="item">
           <article>
@@ -310,7 +309,7 @@
       </p>
       <p>
         Разработано —
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
       </p>
     </div>
   </footer>
@@ -321,15 +320,15 @@
         <ul>
           <li>
             <label for="order-name">Ваше имя:</label>
-            <input type="text" name="name" id="order-name" placeholder="Имя Фамилия">
+            <input type="text" name="name" id="order-name" placeholder="Имя Фамилия" required>
           </li>
           <li>
             <label for="order-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="order-email" placeholder="email@example.com">
+            <input type="email" name="email" id="order-email" placeholder="email@example.com" required>
           </li>
           <li>
             <label for="text-of-letter">Текст письма:</label>
-            <textarea id="text-of-letter" placeholder="В свободной форме"></textarea>
+            <textarea id="text-of-letter" placeholder="В свободной форме" required></textarea>
           </li>
         </ul>
       </label>
@@ -337,6 +336,7 @@
     </form>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <!--Попап товар добавлен корзину-->
   <section class="visually-hidden">
     <div class="main-basket">
       <p>Товар добавлен в корзину!</p>
@@ -347,6 +347,7 @@
     </div>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <!--Попап карта-->
   <section class="maps-popup visually-hidden">
     <a href="https://goo.gl/maps/Hqs4qyHb71zv3RyM7" target="_blank">
       <img src="img/map-popup.png" width="943" height="449"
