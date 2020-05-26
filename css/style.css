@@ -1,0 +1,199 @@
+:root {
+  --basic-white: #ffffff;
+  --basic-dark-blue: #293449;
+  --basic-light: rgba(0, 0, 0, 0.0001);
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-orange: #FFBF47;
+  --basic-blue: #3BBCE3;
+  --basic-pink: #DC91D8;
+  --basic-light-green: #8ED78F;
+  --basic-orange-dark: #FFC047;
+  --basic-light-beige: #F9F5F0;
+  --basic-light-blue: #F1F5F7;
+  --basic-dark: #000000;
+  --basic-violet: #32425C;
+  --basic-gold: #FFD180;
+  --basic-beige: #F7F3EC;
+  --basic-purple-light: #F2F6F8;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/Cuprum/Cuprum-Regular.woff2") format("woff2"), 
+       url("../fonts/Cuprum/Cuprum-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PT_Sans/PTSans-Regular.woff2") format("woff2"), 
+       url("../fonts/PT_Sans/PTSans-Regular.woff") format("woff");
+}
+
+.popap {
+  display: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Глобальные параметры */
+body {
+  min-width: 1000px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-white);
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+/* Блок Header */
+
+.header {
+  background-image: url("../img/top-header-background.png");
+}
+
+.header-top {
+  background-color: var(--basic-dark-blue);
+}
+
+.logo {
+  background-color: var(--basic-red);
+}
+
+.header-top input[type="search"] {
+  color: var(--basic-white);
+  background-color: var(--basic-dark-blue);
+}
+
+.header-top input[type="search"]::placeholder {
+  color: var(--basic-white);
+}
+
+.header-top a:last-child {
+  background-color: var(--basic-green);
+}
+
+.header-middle h2 {
+  color: var(--basic-red);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.header .contact-tel a {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--basic-red);
+}
+
+.header .contact-tel p {
+  font-size: 14px;
+  color: var(--basic-violet);
+}
+
+.my-office a {
+  font-size: 21px;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+
+nav ul {
+  background-color: var(--basic-dark-blue);
+}
+
+/*Блок service*/
+
+.service {
+  background-color: var(--basic-light-blue);
+}
+
+.tabs a{
+  font-size: 21px;
+  background-color: var(--basic-violet);
+}
+
+.tabs .active {
+  color: var(--basic-violet);
+  background-color: var(--basic-white);
+}
+
+.tabs h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--basic-violet);
+  text-transform: uppercase;
+}
+
+.tabs .credit-button {
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+}
+
+.about-company li {
+  font-size: 18px;
+}
+
+.about-company a,
+.maps a {
+  background-color: var(--basic-red);
+  text-transform: uppercase;
+}
+
+.maps .maps-link {
+  background-color: transparent;
+}
+
+.footer {
+  background-color: var(--basic-violet);
+}
+
+.footer .contact-tel {
+  font-size: 18px;;
+  color: var(--basic-white);
+}
+
+.footer-bottom-menu a {
+  color: var(--basic-gold);
+}
+
+.footer-bottom {
+  background-color: var(--basic-dark-blue);
+}
+.footer-bottom p {
+  color: var(--basic-white);
+  font-size: 16px;
+}
+
+
+ 
