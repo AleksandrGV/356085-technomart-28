@@ -6,12 +6,16 @@
   <meta charset="utf-8">
   <meta name="description" content="Интернет магазин строительных материалов и инструментов для ремонта." />
   <meta name="keywords" content="строительные материалы, инструмент, ремонт, строительство, техника" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="header-top">
-      <a class="logo"><span class="visually-hidden">Техномарт</span></a>
+      <a class="logo">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт">
+      </a>
       <!--Форма поиска-->
       <form action="https://echo.htmlacademy.ru" method="get">
         <label for="form-search" class="visually-hidden">Поиск</label>
@@ -202,7 +206,7 @@
       <div class="tabs">
         <ul>
           <li>
-            <a href="#delivery">Доставка</a>
+            <a href="#delivery" class="active">Доставка</a>
           </li>
           <li>
             <a href="#guarantee">Гарантия</a>
@@ -219,6 +223,8 @@
               Ведь мы неплохо заработаем, <br>
               поднимая его на ваш этаж!
             </p>
+            <!--Думаю картинки будут уместнее в html, чем в css-->
+            <img src="img/delivery-icon.png" width="468" height="261" alt="Картинка автомобиля доставки">
           </li>
           <li id="guarantee">
             <h3>Гарантия</h3>
@@ -228,13 +234,15 @@
               Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.
             </p>
+            <img src="img/guarantee-icon.png" width="389" height="283" alt="Эмблема гарантий">
           </li>
           <li id="credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
             </p>
-            <a href="#!">Отправить заявку</a>
+            <a href="#!" class="credit-button">Отправить заявку</a>
+            <img src="img/credit-icon.png" width="389" height="283" alt="Иконка с деньгами">
           </li>
         </ul>
       </div>
@@ -257,22 +265,24 @@
         </ul>
         <a href="#!">Подробнее о компании</a>
       </section>
-      <section>
+      <section class="maps">
         <h2>Контакты</h2>
         <p>
           Вы можете забрать товар сами,
           заехав в наш офис:
         </p>
         <!--Карта-->
-        <a href="https://goo.gl/maps/Hqs4qyHb71zv3RyM7" target="_blank"><img src="img/card.png" width="300" height="158"
+        <a href="https://goo.gl/maps/Hqs4qyHb71zv3RyM7" class="maps-link" target="_blank"><img src="img/card.png" width="300" height="158"
             alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19 "></a>
         <a href="#!">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer-top">
-      <a class="logo"><span class="visually-hidden">Техномарт</span></a>
+      <a class="logo">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт">
+      </a>
       <div class="contact-tel">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -295,13 +305,13 @@
       <p>&copy; 2010–2019 Компания «Техномарт» Все права защищены</p>
       <ul class="socials">
         <li>
-          <a href="#!"><span class="visually-hidden">Вконтакте</span></a>
+          <a href="#!" class="vk-icon"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li>
-          <a href="#!"><span class="visually-hidden">Фейсбук</span></a>
+          <a href="#!" class="facebook-icon"><span class="visually-hidden">Фейсбук</span></a>
         </li>
         <li>
-          <a href="#!"><span class="visually-hidden">Инстаграм</span></a>
+          <a href="#!" class="instagram-icon"><span class="visually-hidden">Инстаграм</span></a>
         </li>
       </ul>
       <p>Обратная связь:
@@ -314,7 +324,7 @@
     </div>
   </footer>
   <!--Попап, форма заказа-->
-  <section class="visually-hidden">
+  <section class="popap visually-hidden">
     <form action="https://echo.htmlacademy.ru" method="post">
       <label>
         <ul>
@@ -337,7 +347,7 @@
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <!--Попап товар добавлен корзину-->
-  <section class="visually-hidden">
+  <section class="popap visually-hidden">
     <div class="main-basket">
       <p>Товар добавлен в корзину!</p>
       <ul>
@@ -348,7 +358,7 @@
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <!--Попап карта-->
-  <section class="maps-popup visually-hidden">
+  <section class="popap maps-popup visually-hidden">
     <a href="https://goo.gl/maps/Hqs4qyHb71zv3RyM7" target="_blank">
       <img src="img/map-popup.png" width="943" height="449"
         alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19 ">
