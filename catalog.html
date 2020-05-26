@@ -6,12 +6,16 @@
   <meta charset="utf-8">
   <meta name="description" content="Интернет магазин строительных материалов и инструментов для ремонта." />
   <meta name="keywords" content="строительные материалы, инструмент, ремонт, строительство, техника" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <div class="header-top">
-      <a href="index.html" class="logo"><span class="visually-hidden">Техномарт</span></a>
+      <a class="logo">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт">
+      </a>
       <!--Форма поиска-->
       <form action="https://echo.htmlacademy.ru" method="get">
         <label for="form-search" class="visually-hidden">Поиск</label>
@@ -278,9 +282,11 @@
       </p>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer-top">
-      <a href="#!" class="logo"><span class="visually-hidden">Техномарт</span></a>
+      <a class="logo">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Логотип магазина Техномарт">
+      </a>
       <div class="contact-tel">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -324,7 +330,7 @@
     </div>
   </footer>
   <!--Попап, форма заказа-->
-  <section class="visually-hidden">
+  <section class="popap visually-hidden">
     <form action="https://echo.htmlacademy.ru" method="post">
       <label>
         <ul>
@@ -347,7 +353,7 @@
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <!--Попап товар добавлен в корзину-->
-  <section class="visually-hidden">
+  <section class="popap visually-hidden">
     <div class="main-basket">
       <p>Товар добавлен в корзину!</p>
       <ul>
