@@ -319,7 +319,7 @@
       </p>
       <p>
         Разработано —
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
       </p>
     </div>
   </footer>
@@ -330,15 +330,15 @@
         <ul>
           <li>
             <label for="order-name">Ваше имя:</label>
-            <input type="text" name="name" id="order-name" placeholder="Имя Фамилия">
+            <input type="text" name="name" id="order-name" placeholder="Имя Фамилия" required>
           </li>
           <li>
             <label for="order-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="order-email" placeholder="email@example.com">
+            <input type="email" name="email" id="order-email" placeholder="email@example.com" required>
           </li>
           <li>
             <label for="text-of-letter">Текст письма:</label>
-            <textarea id="text-of-letter" placeholder="В свободной форме"></textarea>
+            <textarea id="text-of-letter" placeholder="В свободной форме" required></textarea>
           </li>
         </ul>
       </label>
@@ -346,6 +346,7 @@
     </form>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  <!--Попап товар добавлен в корзину-->
   <section class="visually-hidden">
     <div class="main-basket">
       <p>Товар добавлен в корзину!</p>
