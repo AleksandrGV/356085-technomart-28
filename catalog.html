@@ -28,8 +28,8 @@
     <div class="header-middle">
       <h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
       <div class="contact-tel">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a href="tel:+78125550555" class="link-header">+7 (812) 555-05-55</a>
+        <p class="tagline-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="my-office">
         <a href="#!">Равшан Джамшутович</a>
@@ -38,8 +38,8 @@
         <a href="#!">Личный кабинет</a>
       </div>
     </div>
-    <nav>
-      <ul>
+    <nav class="main-menu">
+      <ul class="list">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#!">Компания</a></li>
         <li><a>Каталог</a></li>
@@ -51,7 +51,7 @@
     </nav>
   </header>
   <main>
-    <ul class="breadcrumbs">
+    <ul class="list breadcrumbs">
       <li><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
       <li><a href="#!">Каталог</a></li>
       <li><a href="#!">Инструмент</a></li>
@@ -65,7 +65,7 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Цена:</legend>
-            <ul>
+            <ul class="list">
               <li>
                 <input type="range" id="filter-price" name="price" min="0" max="30000" step="1">
               </li>
@@ -81,7 +81,7 @@
           </fieldset>
           <fieldset>
             <legend>Производители:</legend>
-            <ul>
+            <ul class="list">
               <li>
                 <input type="checkbox" name="bosch" id="filter-bosch-field" checked>
                 <label for="filter-bosch-field">Bosch</label>
@@ -106,7 +106,7 @@
           </fieldset>
           <fieldset>
             <legend>Питание:</legend>
-            <ul>
+            <ul class="list">
               <li>
                 <!--У radio name должен быть один для всего блока-->
                 <input type="radio" id="filter-rechargeable" name="power-production" value="rechargeable" checked>
@@ -124,7 +124,7 @@
       <!--Сортировка-->
       <div class="sort">
         <h4>Сортировна:</h4>
-        <ul>
+        <ul class="list">
           <li>
             <a href="#!">По цене</a>
           </li>
@@ -136,7 +136,7 @@
           </li>
         </ul>
       </div>
-      <ul>
+      <ul class="list">
         <!--Каталог должен быть списком для симантики и стилизации-->
         <li>
           <article>
@@ -255,7 +255,7 @@
         </li>
       </ul>
       <!--Переключение страниц-->
-      <ul class="pagination">
+      <ul class="list pagination">
         <li>
           <a href="#!">1</a>
         </li>
@@ -290,14 +290,14 @@
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </div>
-      <ul class="footer-top-menu">
+      <ul class="list footer-top-menu">
         <li><a href="#!">Компания</a></li>
         <li><a href="#!">Новости</a></li>
         <li><a>Каталог</a></li>
         <li><a href="#!">Доставка</a></li>
         <li><a href="#!">Контакты</a></li>
       </ul>
-      <ul class="footer-bottom-menu">
+      <ul class="list footer-bottom-menu">
         <li><a href="#!">Материалы</a></li>
         <li><a href="#!">Техника</a></li>
         <li><a href="#!">Инструмент</a></li>
@@ -308,7 +308,7 @@
       <p>&copy; 2010–2019 Компания «Техномарт»
         Все права защищены
       </p>
-      <ul class="socials">
+      <ul class="list socials">
         <li>
           <a href="#!"><span class="visually-hidden">Вконтакте</span></a>
         </li>
@@ -332,7 +332,7 @@
   <section class="popup visually-hidden">
     <form action="https://echo.htmlacademy.ru" method="post">
       <label>
-        <ul>
+        <ul class="list">
           <li>
             <label for="order-name">Ваше имя:</label>
             <input type="text" name="name" id="order-name" placeholder="Имя Фамилия" required>
@@ -355,7 +355,7 @@
   <section class="popup visually-hidden">
     <div class="main-basket">
       <p>Товар добавлен в корзину!</p>
-      <ul>
+      <ul class="list">
         <li><a href="#!">Оформить заказ</a></li>
         <li><a href="#!">Продолжить покупки</a></li>
       </ul>
