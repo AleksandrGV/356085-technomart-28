@@ -68,7 +68,7 @@ img {
   height: auto;
 }
 
-h2 {
+.heading-section {
   font-size: 30px;
   text-transform: uppercase;
 }
