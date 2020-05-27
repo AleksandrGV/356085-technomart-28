@@ -79,7 +79,7 @@ ul {
 /* Блок Header */
 
 .header {
-  background-image: url("../img/top-header-background.png");
+  background-color: var(--basic-light-blue);
 }
 
 .header-top {
