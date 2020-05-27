@@ -49,7 +49,7 @@ body {
   min-width: 1000px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum";
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
