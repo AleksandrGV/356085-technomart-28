@@ -142,7 +142,7 @@ input[type="search"]::placeholder {
   background-color: var(--basic-light-blue);
 }
 
-.tabs a{
+.tabs a {
   font-size: 21px;
   background-color: var(--basic-violet);
 }
@@ -152,8 +152,8 @@ input[type="search"]::placeholder {
   background-color: var(--basic-white);
 }
 
-.tabs h3 {
-  font-size: 30px;
+.tabs .subtitle {
+  font-size: 36px;
   font-weight: 400;
   color: var(--basic-violet);
   text-transform: uppercase;
@@ -162,6 +162,24 @@ input[type="search"]::placeholder {
 .tabs .credit-button {
   text-transform: uppercase;
   background-color: var(--basic-red);
+}
+
+.item-tabs {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.delivery-tabs {
+  background-image: url(../img/delivery-icon.png);
+}
+
+.guarantee-tabs {
+  background-image: url(../img/guarantee-icon.png);
+}
+
+.credit-tabs {
+  background-image: url(../img/credit-icon.png);
 }
 
 .about-company li {
@@ -183,7 +201,7 @@ input[type="search"]::placeholder {
 }
 
 .footer .contact-tel {
-  font-size: 18px;;
+  font-size: 18px;
   color: var(--basic-white);
 }
 
@@ -194,6 +212,7 @@ input[type="search"]::placeholder {
 .footer-bottom {
   background-color: var(--basic-dark-blue);
 }
+
 .footer-bottom p {
   color: var(--basic-white);
   font-size: 16px;
