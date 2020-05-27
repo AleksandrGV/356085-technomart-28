@@ -218,5 +218,25 @@ input[type="search"]::placeholder {
   font-size: 16px;
 }
 
+.social-icon {
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 44px;
+  height: 44px;
+  display: inline-block; /*Без dispay иконок не видно*/
+}
 
- 
+.social-icon-vk {
+  background-image: url(../img/icon-vk.svg);
+  background-position: 5px;
+}
+
+.social-icon-facebook {
+  background-image: url(../img/icon-fb.svg);
+  background-position: 15px 10px;
+}
+
+.social-icon-instagram {
+  background-image: url(../img/icon-insta.svg);
+  background-position: 10px;
+}
