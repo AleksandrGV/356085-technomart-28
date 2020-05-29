@@ -19,19 +19,19 @@
 }
 
 @font-face {
-  font-family: "Cuprum";
+  font-family: "cuprum";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Cuprum/Cuprum-Regular.woff2") format("woff2"), 
-       url("../fonts/Cuprum/Cuprum-Regular.woff") format("woff");
+  src: url("../fonts/cuprum/cuprum-regular.woff2") format("woff2"), 
+       url("../fonts/cuprum/cuprum-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "PTSans";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/PT-Sans/PTSans-Regular.woff2") format("woff2"), 
-       url("../fonts/PT-Sans/PTSans-Regular.woff") format("woff");
+  src: url("../fonts/pt-sans/pt-sans-regular.woff2") format("woff2"), 
+       url("../fonts/pt-sans/pt-sans-regular.woff") format("woff");
 }
 
 .visually-hidden {
