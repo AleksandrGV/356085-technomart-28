@@ -60,8 +60,8 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--basic-white);
-  font-size: 18px;
+  /*color: var(--basic-white);
+  font-size: 18px;*/
 }
 
 img {
@@ -85,6 +85,11 @@ img {
 
 .header-top {
   background-color: var(--basic-dark-blue);
+}
+
+.header-top a {
+  color: var(--basic-white);
+  font-size: 18px;
 }
 
 .logo {
@@ -131,6 +136,11 @@ input[type="search"]::placeholder {
 
 .main-menu .list {
   background-color: var(--basic-dark-blue);
+}
+
+.main-menu a {
+  color: var(--basic-white);
+  font-size: 18px;
 }
 
 /*Блок service*/
