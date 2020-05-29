@@ -230,6 +230,7 @@ img {
 .social-icon {
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: center;
   width: 44px;
   height: 44px;
   display: inline-block; /*Без display иконок не видно*/
@@ -238,15 +239,12 @@ img {
 
 .social-icon-vk {
   background-image: url(../img/icon-vk.svg);
-  background-position: 5px;
 }
 
 .social-icon-facebook {
   background-image: url(../img/icon-fb.svg);
-  background-position: 15px 10px;
 }
 
 .social-icon-instagram {
   background-image: url(../img/icon-insta.svg);
-  background-position: 10px;
 }
