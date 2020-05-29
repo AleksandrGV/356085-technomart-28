@@ -96,12 +96,13 @@ img {
   background-color: var(--basic-red);
 }
 
-input[type="search"] {
+.site-search {
   color: var(--basic-white);
   background-color: var(--basic-dark-blue);
+  font-size: 18px;
 }
 
-input[type="search"]::placeholder {
+.site-search::placeholder {
   color: var(--basic-white);
 }
 
