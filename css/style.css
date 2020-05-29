@@ -34,9 +34,6 @@
        url("../fonts/PT-Sans/PTSans-Regular.woff") format("woff");
 }
 
-.popap {
-  display: none;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -223,7 +220,7 @@ input[type="search"]::placeholder {
   background-size: auto;
   width: 44px;
   height: 44px;
-  display: inline-block; /*Без dispay иконок не видно*/
+  display: inline-block; /*Без display иконок не видно*/
 }
 
 .social-icon-vk {
