@@ -72,22 +72,48 @@
             <a href="#!">для стройки</a>
           </article>
         </li>
+        <!--Слайдер-->
         <li class="item slider">
-          <article class="slide active-slide">
-            <h2>Перфораторы</h2>
-            <p>Настоящие мужские игрушки</p>
-            <a href="#!">открыть каталог</a>
-          </article>
-          <article class="slide">
-            <h2>Дрели</h2>
-            <p>Соседям на радость</p>
-            <a href="#!">открыть каталог</a>
-          </article>
+          <ul>
+            <li>
+              <article class="slide active-slide">
+                <h2>Перфораторы</h2>
+                <p>Настоящие мужские игрушки</p>
+                <a href="#!">открыть каталог</a>
+              </article>
+            </li>
+            <li>
+              <article class="slide">
+                <h2>Дрели</h2>
+                <p>Соседям на радость</p>
+                <a href="#!">открыть каталог</a>
+              </article>
+            </li>
+          </ul>
           <article>
-            <!--Круги переключения слайдера-->
+            <h6 class="visually-hidden">Стрелки и круги для слайдера</h6>
+            <!--Круги и стрелки переключения слайдера-->
             <ul class="list slider-dots">
-              <li><button type="button"><span class="visually-hidden">Первый слайд</span></button></li>
-              <li><button type="button"><span class="visually-hidden">Второй слайд</span></button></li>
+              <li>
+                <button type="button">
+                  <span class="visually-hidden">Первый слайд</span>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="visually-hidden">Второй слайд</span>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="visually-hidden">Стрелка влево</span>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="visually-hidden">Стрелка вправо</span>
+                </button>
+              </li>
             </ul>
           </article>
         </li>
@@ -318,44 +344,45 @@
   </footer>
   <!--Попап, форма заказа-->
   <section class="popup visually-hidden">
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <label>
-        <ul class="list">
-          <li>
-            <label for="order-name">Ваше имя:</label>
-            <input type="text" name="name" id="order-name" placeholder="Имя Фамилия" required>
-          </li>
-          <li>
-            <label for="order-email">Ваш e-mail:</label>
-            <input type="email" name="email" id="order-email" placeholder="email@example.com" required>
-          </li>
-          <li>
-            <label for="text-of-letter">Текст письма:</label>
-            <textarea id="text-of-letter" placeholder="В свободной форме" required></textarea>
-          </li>
-        </ul>
-      </label>
-      <button type="submit">Оформить заказ</button>
-    </form>
+    <h6 class="visually-hidden">Форма заказа</h6>
+      <form action="https://echo.htmlacademy.ru" method="post">
+          <ul class="list">
+            <li>
+              <label for="order-name">Ваше имя:</label>
+              <input type="text" name="name" id="order-name" placeholder="Имя Фамилия" required>
+            </li>
+            <li>
+              <label for="order-email">Ваш e-mail:</label>
+              <input type="email" name="email" id="order-email" placeholder="email@example.com" required>
+            </li>
+            <li>
+              <label for="text-of-letter">Текст письма:</label>
+              <textarea id="text-of-letter" placeholder="В свободной форме" required></textarea>
+            </li>
+          </ul>
+        <button type="submit">Оформить заказ</button>
+      </form>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <!--Попап товар добавлен корзину-->
   <section class="popup visually-hidden">
-    <div class="main-basket">
-      <p>Товар добавлен в корзину!</p>
-      <ul class="list">
-        <li><a href="#!">Оформить заказ</a></li>
-        <li><a href="#!">Продолжить покупки</a></li>
-      </ul>
-    </div>
+    <h6 class="visually-hidden">Уведомление товар добавлен в корзину</h6>
+      <div class="main-basket">
+        <p>Товар добавлен в корзину!</p>
+        <ul class="list">
+          <li><a href="#!">Оформить заказ</a></li>
+          <li><a href="#!">Продолжить покупки</a></li>
+        </ul>
+      </div>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <!--Попап карта-->
   <section class="popup maps-popup visually-hidden">
-    <a href="https://goo.gl/maps/Hqs4qyHb71zv3RyM7" target="_blank">
-      <img src="img/map-popup.png" width="943" height="449"
-        alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19 ">
-    </a>
+    <h6 class="visually-hidden">Popup Карта</h6>
+      <a href="https://goo.gl/maps/Hqs4qyHb71zv3RyM7" target="_blank">
+        <img src="img/map-popup.png" width="943" height="449"
+          alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19 ">
+      </a>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
