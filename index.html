@@ -49,43 +49,47 @@
     </nav>
   </header>
   <main>
-    <!--Catds andSlider-->
+    <!--Catds and Slider-->
     <section class="cards-and-slider">
       <h5 class="visually-hidden">Промо блок со слайдером</h5>
       <ul class="list">
-        <li class="item">
+        <li class="item item-material">
           <article>
-            <span>New</span>
-            <h3>Материалы</h3>
+            <span class="new">New</span>
+            <h3 class="caption">Материалы</h3>
             <a href="#!">на любой вкус</a>
           </article>
         </li>
-        <li class="item">
+        <li class="item item-tool">
           <article>
-            <h3>Инструмент</h3>
+            <h3 class="caption">Инструмент</h3>
             <a href="#!">на все случаи</a>
           </article>
         </li>
-        <li class="item">
+        <li class="item item-equipment">
           <article>
-            <h3>Техника</h3>
+            <h3 class="caption">Техника</h3>
             <a href="#!">для стройки</a>
           </article>
         </li>
         <!--Слайдер-->
-        <li class="item">
+        <li class="item item-slider">
           <ul class="slider">
             <li class="slide active-slide">
               <article>
-                <h2>Перфораторы</h2>
-                <p>Настоящие мужские игрушки</p>
-                <a href="#!">открыть каталог</a>
+                <div class="slide-opacity">
+                  <h2 class="subject-slider">Перфораторы</h2>
+                  <p>Настоящие мужские игрушки</p>
+                </div>
+                  <a href="#!">открыть каталог</a>
               </article>
             </li>
-            <li>
-              <article class="slide">
-                <h2>Дрели</h2>
-                <p>Соседям на радость</p>
+            <li class="slide">
+              <article >
+                <div class="slide-opacity">
+                  <h2 class="subject-slider">Дрели</h2>
+                  <p>Соседям на радость</p>
+                </div>
                 <a href="#!">открыть каталог</a>
               </article>
             </li>
@@ -116,103 +120,107 @@
             </li>
           </ul>
         </li>
-        <li class="item">
+        <li class="item item-sale">
           <article>
-            <h3>Скидка 50%</h3>
+            <h3 class="caption">Скидка 50%</h3>
             <a href="#!">на 350 товаров</a>
           </article>
         </li>
-        <li class="item">
+        <li class="item item-delivery">
           <article>
-            <h3>Доставка</h3>
+            <h3 class="caption">Доставка</h3>
             <a href="#!">бесплатно</a>
           </article>
         </li>
       </ul>
     </section>
     <!--Блок популярные товары-->
-    <section>
-      <h2 class="heading">Популярные товары</h2>
-      <a href="#!">Все популярные товары</a>
+    <section class="popular-goods">
+      <div class="popular-block">
+        <h2 class="heading">Популярные товары</h2>
+        <a href="#!">Все популярные товары</a>
+      </div>
       <ul class="list">
-        <li>
-          <article>
+        <li class="product-cards">
+          <article class="center">
             <img src="img/wire-hammer.png" width="184" height="164" alt="Перфоратор Bosch, модель BFG 9000">
             <h3>Перфоратор BOSCH BFG 9000</h3>
-            <del>32500 Р.</del>
-            <ins>25500 Р.</ins>
+            <del class="old-price">32500 Р.</del>
+            <ins class="new-price">25500 Р.</ins>
           </article>
         </li>
-        <li>
-          <article>
-            <span>New</span>
+        <li class="product-cards">
+          <article class="center">
+            <span class="new">New</span>
             <img src="img/cordless-rotary-hammer-blue.png" width="184" height="164"
               alt="Перфоратор Bosch, модель BFG 3000">
             <h3>Перфоратор BOSCH BFG 3000</h3>
-            <del>22500 Р.</del>
-            <ins>15500 Р.</ins>
+            <del class="old-price">22500 Р.</del>
+            <ins class="new-price">15500 Р.</ins>
           </article>
         </li>
-        <li>
-          <article>
+        <li class="product-cards">
+          <article class="center">
             <img src="img/cordless-rotary-hammer.png" width="184" height="164" alt="Перфоратор Bosch, модель BFG 6000">
             <h3>Перфоратор BOSCH BFG 6000</h3>
-            <del>30500 Р.</del>
-            <ins>25500 Р.</ins>
+            <del class="old-price">30500 Р.</del>
+            <ins class="new-price">25500 Р.</ins>
           </article>
         </li>
-        <li>
-          <article>
-            <span>New</span>
+        <li class="product-cards">
+          <article class="center">
+            <span class="new">New</span>
             <img src="img/cordless-rotary-hammer-blue.png" width="184" height="164"
               alt="Перфоратор Bosch, модель BFG 2000">
             <h3>Перфоратор BOSCH BFG 2000</h3>
-            <span>12500 Р.</span>
+            <span class="new-price">12500 Р.</span>
           </article>
         </li>
       </ul>
     </section>
     <!--Популярные производители-->
-    <section>
-      <h2 class="heading">Популярные производители:</h2>
-      <a href="#!">Все производители</a>
+    <section class="popular-manufacturers">
+      <div class="popular-block">
+        <h2 class="heading">Популярные производители:</h2>
+        <a href="#!">Все производители</a>
+      </div>
       <ul class="list">
-        <li>
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/bosch-banner.png" width="126" height="37" alt="Техника Bosch">
           </a>
         </li>
-        <li>
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/makita-banner.png" width="123" height="40" alt="Техника Makita">
           </a>
         </li>
-        <li>
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/dewalt-banner.png" width="146" height="44" alt="Техника Dewalt">
           </a>
-        </li>
-        <li>
+        </li >
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/interscol-banner.png" width="200" height="88" alt="Техника Интерскол">
           </a>
         </li>
-        <li>
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/hitachi-banner.png" width="169" height="31" alt="Техника Hitachi">
           </a>
         </li>
-        <li>
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/lg-banner.png" width="121" height="73" alt="Техника Lg">
           </a>
         </li>
-        <li>
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/aeg-banner.png" width="151" height="96" alt="Техника Aeg">
           </a>
         </li>
-        <li>
+        <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/metabo-banner.png" width="204" height="69" alt="Техника Metabo">
           </a>
