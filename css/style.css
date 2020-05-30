@@ -16,6 +16,8 @@
   --basic-gold: #FFD180;
   --basic-beige: #F7F3EC;
   --basic-purple-light: #F2F6F8;
+  --basic-dark-blue-icon: #212A3A;
+  --basic-gray: #EAEAEA;
 }
 
 @font-face {
@@ -77,6 +79,7 @@ img {
   margin: 0;
   padding: 0;
 }
+
 /* Блок Header */
 
 .header {
@@ -143,11 +146,284 @@ img {
   color: var(--basic-white);
   font-size: 18px;
 }
+/*Catds and Slider*/
+
+.cards-and-slider .item:not(:nth-child(4)) {
+  position: relative;
+  width: 300px;
+  height: 123px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+
+.cards-and-slider a {
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.3); /*Не знаю как подругому сделать пробовал через базовые цвета не получается*/
+  color: var(--basic-white);
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  margin-left: 23px;
+  padding-left: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 24px;
+}
+
+.item-tool a {
+  border: 2px solid;
+  border-color: rgba(50, 66, 92, 0.3);
+}
+
+.cards-and-slider .item-material:first-child {
+  background-color: var(--basic-orange);
+}
+
+.cards-and-slider .item-tool {
+  background-color: var(--basic-blue);
+}
+
+.cards-and-slider .item-equipment {
+  background-color: var(--basic-pink);
+}
+
+.cards-and-slider .item-sale {
+  background-color: var(--basic-light-green);
+}
+
+.cards-and-slider .item-delivery {
+  background-color: var(--basic-orange-dark);
+}
+
+.new {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+  left: 220px;
+  top: 9px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  transform: rotate(45deg);
+}
+
+.new::before {
+  content: "";
+  width: 46px;
+  position: absolute;
+  top: 0;
+  right: -7px;
+  display: block;
+  border: 30px solid var(--basic-white);
+  border-bottom-color: var(--basic-red);
+  border-top-width: 0;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  z-index: -1;
+}
+
+
+.cards-and-slider .caption {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 23px;
+  margin-bottom: 14px;
+  padding-top: 20px;
+}
+
+.item-material .caption {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.cards-and-slider .caption::after {
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 70px;
+  display: block;  
+  top: 20px;
+}
+.item-material .caption::after {  
+  background-image: url(../img/materials-icon.svg);
+  top: 0;
+  right: 40px;
+}
+
+.item-tool .caption::after {
+  background-image: url(../img/tool-icon.svg);
+  right: 30px;
+}
+
+.item-equipment .caption::after {
+  background-image: url(../img/technique-icon.svg);
+  right: 20px;
+}
+
+.item-sale .caption::after {
+  background-image: url(../img/discount-icon.svg);
+  right: 40px;
+}
+
+.item-delivery .caption::after {
+  background-image: url(../img/delivery-icon.svg);
+  right: 40px;
+}
+
+/*Слайдер*/
+.item-slider {
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  padding: 0;
+  width: 620px;
+  color: var(--basic-white);
+}
+
+.slide {
+  /*position: absolute;*/
+  width: 100%;
+  height: 288px;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg-slider-mini-puncher.jpg);
+}
+
+.active-slide {
+  background-image: url(../img/bg-slider-hammer-drill.jpg);
+}
+
+.slide-opacity {
+  padding-top: 23px;
+  padding-bottom: 5px;
+  margin-bottom: 105px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.subject-slider {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: 24px;
+  margin-bottom: 10px;
+}
+
+.slide p {
+  font-size: 18px;
+  margin-left: 24px;
+  margin-bottom: 10px;;
+}
+
+.slide a {
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+}
+
+/*Управление слайдером*/
+
+.slider-dots .button {
+  position: absolute;
+  background-color: var(--basic-white);
+  width: 10px;
+  height: 10px;
+  border: 15px solid var(--basic-red);
+  border-radius: 50%;
+}
+
+/*Блок популярные товары*/
+
+.popular-block {
+  background-color: var(--basic-light-beige);
+}
+
+.popular-block h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: var(--basic-violet);
+}
+
+.popular-block a {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  font-size: 14px;
+}
+
+.product-cards {
+  font-family: "PTSans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 220px;
+  height: auto;
+  border: 1px solid var(--basic-gray);
+  margin: 10px;
+  padding-bottom: 21px;
+}
+
+.product-cards h3 {
+  margin-bottom: 10px;;
+}
+
+.center {
+  text-align: center;
+}
+
+.old-price {
+  font-size: 17px;
+  color: var(--basic-gray);
+  display: block;
+  margin-bottom: 14px;
+}
+
+.new-price {
+  font-size: 17px;
+  color: var(--basic-white);
+  background-image: url(../img/red-button.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-bottom: 10px;
+  padding-right: 44px;
+  cursor: pointer;
+}
+
+.product-cards .new {
+  left: 140px;
+  color: var(--basic-white);
+}
+
+/*Популярные производители*/
+
+.popular-card-manufacturers {
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--basic-gray);
+  text-align: center;
+  line-height: 15;
+  margin: 10px;
+}
 
 /*Блок service*/
 
 .service {
   background-color: var(--basic-light-blue);
+}
+
+.service p {
+  font-family: "PTSans", "Tahoma", sans-serif;
 }
 
 .tabs a {
@@ -208,6 +484,41 @@ img {
   background-color: transparent;
 }
 
+/*Блок хлебные крошки*/
+
+.breadcrumbs a {
+  font-family: "PTSans", "Tahoma", sans-serif;
+  text-transform: uppercase;
+  color: var(--basic-dark);
+}
+
+.breadcrumbs .home {
+  display: block;
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/icon-home.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog .heading {
+  background-color: var(--basic-light-blue);
+  color: var(--basic-violet);
+}
+
+/*форма с фильтром*/
+.form-filter {
+  width: 220px;
+}
+.catalog-subtitle,
+.sort {
+  height: auto;
+  font-family: "PTSans", "Tahoma", sans-serif;
+  background-color: var(--basic-beige);
+  text-transform: uppercase;
+}
+
+/* Подвал */
 .footer {
   background-color: var(--basic-violet);
 }
@@ -239,6 +550,8 @@ img {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  background-color: var(--basic-dark-blue-icon);
+  border-radius: 50%;
   width: 44px;
   height: 44px;
   display: inline-block; /*Без display иконок не видно*/
