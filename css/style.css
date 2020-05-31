@@ -459,12 +459,44 @@ img {
 /*Популярные производители*/
 
 .popular-card-manufacturers {
-  width: 220px;
-  height: 145px;
+  margin: 10px;
+}
+
+.popular-card-manufacturers a {
+  width: 218px;
+  height: 143px;
   border: 1px solid var(--basic-gray);
   text-align: center;
-  line-height: 15;
-  margin: 10px;
+  display: block;
+}
+
+.popular-card-manufacturers img {
+  margin-top: 50px;
+  margin-left:  10px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+}
+
+.popular-card-manufacturers:nth-child(4) img {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
+.popular-card-manufacturers:nth-child(6) img {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.popular-card-manufacturers:nth-child(7) img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.popular-card-manufacturers:nth-child(8) img {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /*Блок service*/
