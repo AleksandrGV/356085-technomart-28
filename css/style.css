@@ -299,7 +299,9 @@ img {
   color: var(--basic-white);
 }
 
-.slide {
+/*Карточка слайда*/
+
+.card-slide {
   width: 100%;
   background-repeat: no-repeat;
   background-image: url(../img/bg-slider-mini-puncher.jpg);
@@ -307,7 +309,7 @@ img {
   margin: 10px;
 }
 
-.active-slide {
+.card-slide-active {
   background-image: url(../img/bg-slider-hammer-drill.jpg);
 }
 
