@@ -386,7 +386,7 @@ img {
 
 .slider-control .button-right {
   transform: rotate(180deg);
-  left: 590px;
+  right: 730px;
 }
 
 /*Блок популярные товары*/
