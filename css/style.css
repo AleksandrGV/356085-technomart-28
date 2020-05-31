@@ -18,6 +18,10 @@
   --basic-purple-light: #F2F6F8;
   --basic-dark-blue-icon: #212A3A;
   --basic-gray: #EAEAEA;
+
+  --special-opacity-white: rgba(255, 255, 255, 0.3);
+  --special-opacity-black: rgba(0, 0, 0, 0.25);
+  --special-opacity-violet: rgba(50, 66, 92, 0.3);
 }
 
 @font-face {
@@ -159,7 +163,7 @@ img {
 
 .cards-and-slider a {
   text-transform: uppercase;
-  background-color: rgba(255, 255, 255, 0.3); /*Не знаю как подругому сделать пробовал через базовые цвета не получается*/
+  background-color: var(--special-opacity-white);
   color: var(--basic-white);
   font-size: 14px;
   text-align: center;
@@ -171,8 +175,7 @@ img {
 }
 
 .inner-tool a {
-  border: 2px solid;
-  border-color: rgba(50, 66, 92, 0.3);
+  border: 2px solid var(--special-opacity-violet);
 }
 
 .cards-and-slider .inner-material {
@@ -298,7 +301,7 @@ img {
   padding-top: 23px;
   padding-bottom: 5px;
   margin-bottom: 105px;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--special-opacity-black);
 }
 
 .subject-slider {
