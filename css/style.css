@@ -287,10 +287,11 @@ img {
 }
 
 .slide {
-  /*position: absolute;*/
   width: 100%;
   background-repeat: no-repeat;
   background-image: url(../img/bg-slider-mini-puncher.jpg);
+  padding-bottom: 27px;
+  margin: 10px;
 }
 
 .active-slide {
@@ -323,6 +324,7 @@ img {
   font-size: 14px;
   text-transform: uppercase;
   background-color: var(--basic-red);
+  margin-left: 24px;
 }
 
 /*Управление слайдером*/
@@ -331,8 +333,37 @@ img {
   position: absolute;
   background-color: var(--basic-white);
   width: 10px;
-  border: 15px solid var(--basic-red);
+  height: 15px;
+  border: 2px solid var(--basic-white);
   border-radius: 50%;
+  top: 215px;
+  left: 330px;
+}
+
+.slider-dots .button-active {
+  background-color: var(--basic-red);
+  left: 300px;
+}
+
+.slider-control .button {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  top: 124px;
+  border: none;
+  background-image: url(../img/icon-left.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-control .button-left {
+  left: 30px;
+}
+
+.slider-control .button-right {
+  transform: rotate(180deg);
+  right: 460px;
 }
 
 /*Блок популярные товары*/
