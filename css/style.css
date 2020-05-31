@@ -166,12 +166,14 @@ img {
 
 .cards-and-slider .inner:not(:nth-child(4)) {
   position: relative;
-  width: 300px;
+  width: 280px;
   font-size: 24px;
   font-weight: bold;
   color: var(--basic-white);
+  padding-top: 20px;
   padding-left: 23px;
   padding-bottom: 30px;
+  padding-right: 23px;
 }
 
 .cards-and-slider a {
@@ -244,8 +246,8 @@ img {
   position: relative;
   font-size: 24px;
   font-weight: bold;
+  margin-top: 0;
   margin-bottom: 23px;
-  padding-top: 20px;
 }
 
 .cards-and-slider .inner::after {
@@ -403,10 +405,12 @@ img {
   font-family: "PTSans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: bold;
-  width: 220px;
+  width: 200px;
   border: 1px solid var(--basic-gray);
   margin: 10px;
   padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px;;
   padding-bottom: 21px;
   text-align: center;
 }
