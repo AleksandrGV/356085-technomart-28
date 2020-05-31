@@ -204,7 +204,7 @@ img {
   font-size: 14px;
   font-weight: normal;
   display: block;
-  left: 220px;
+  right: -20px;
   top: 9px;
   text-align: center;
   text-transform: uppercase;
