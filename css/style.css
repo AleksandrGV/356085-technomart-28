@@ -148,13 +148,14 @@ img {
 }
 /*Catds and Slider*/
 
-.cards-and-slider .item:not(:nth-child(4)) {
+.cards-and-slider .inner:not(:nth-child(4)) {
   position: relative;
   width: 300px;
   height: 123px;
   font-size: 24px;
   font-weight: bold;
   color: var(--basic-white);
+  padding-left: 23px;
 }
 
 .cards-and-slider a {
@@ -164,40 +165,39 @@ img {
   font-size: 14px;
   text-align: center;
   font-weight: normal;
-  margin-left: 23px;
   padding-left: 23px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 24px;
 }
 
-.item-tool a {
+.inner-tool a {
   border: 2px solid;
   border-color: rgba(50, 66, 92, 0.3);
 }
 
-.cards-and-slider .item-material:first-child {
+.cards-and-slider .inner-material {
   background-color: var(--basic-orange);
 }
 
-.cards-and-slider .item-tool {
+.cards-and-slider .inner-tool {
   background-color: var(--basic-blue);
 }
 
-.cards-and-slider .item-equipment {
+.cards-and-slider .inner-equipment {
   background-color: var(--basic-pink);
 }
 
-.cards-and-slider .item-sale {
+.cards-and-slider .inner-sale {
   background-color: var(--basic-light-green);
 }
 
-.cards-and-slider .item-delivery {
+.cards-and-slider .inner-delivery {
   background-color: var(--basic-orange-dark);
 }
 
 .new {
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 30px;
   font-size: 14px;
@@ -231,15 +231,10 @@ img {
   position: relative;
   font-size: 24px;
   font-weight: bold;
-  margin-left: 23px;
-  margin-bottom: 14px;
+  margin-bottom: 23px;
   padding-top: 20px;
 }
 
-.item-material .caption {
-  margin-top: 0;
-  padding-top: 0;
-}
 
 .cards-and-slider .caption::after {
   content: "";
@@ -251,7 +246,8 @@ img {
   display: block;  
   top: 20px;
 }
-.item-material .caption::after {  
+/*.item-material .caption::after,*/
+.inner-material .caption::after {  
   background-image: url(../img/materials-icon.svg);
   top: 0;
   right: 40px;
@@ -359,7 +355,10 @@ img {
   font-size: 14px;
 }
 
+/*Карточки товаров*/
+
 .product-cards {
+  position: relative;
   font-family: "PTSans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -367,15 +366,13 @@ img {
   height: auto;
   border: 1px solid var(--basic-gray);
   margin: 10px;
+  padding-top: 40px;
   padding-bottom: 21px;
+  text-align: center;
 }
 
 .product-cards h3 {
   margin-bottom: 10px;;
-}
-
-.center {
-  text-align: center;
 }
 
 .old-price {
