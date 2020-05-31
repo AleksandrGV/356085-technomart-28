@@ -452,7 +452,7 @@ img {
 }
 
 .product-card .new {
-  left: 140px;
+  right: -20px;
   color: var(--basic-white);
 }
 
