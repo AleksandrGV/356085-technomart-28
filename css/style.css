@@ -150,6 +150,7 @@ img {
   color: var(--basic-white);
   font-size: 18px;
 }
+
 /*Catds and Slider*/
 
 .cards-and-slider .inner:not(:nth-child(4)) {
@@ -228,7 +229,6 @@ img {
   z-index: -1;
 }
 
-
 .cards-and-slider .caption {
   position: relative;
   font-size: 24px;
@@ -236,7 +236,6 @@ img {
   margin-bottom: 23px;
   padding-top: 20px;
 }
-
 
 .cards-and-slider .inner::after {
   content: "";
@@ -275,6 +274,7 @@ img {
 }
 
 /*Слайдер*/
+
 .item-slider {
   position: relative;
 }
@@ -533,9 +533,11 @@ img {
 }
 
 /*форма с фильтром*/
+
 .form-filter {
   width: 220px;
 }
+
 .catalog-subtitle,
 .sort {
   font-family: "PTSans", "Tahoma", sans-serif;
@@ -544,6 +546,7 @@ img {
 }
 
 /* Подвал */
+
 .footer {
   background-color: var(--basic-violet);
 }
