@@ -19,9 +19,20 @@
   --basic-dark-blue-icon: #212A3A;
   --basic-gray: #EAEAEA;
 
-  --special-opacity-white: rgba(255, 255, 255, 0.3);
-  --special-opacity-black: rgba(0, 0, 0, 0.25);
-  --special-opacity-violet: rgba(50, 66, 92, 0.3);
+  --white-rgb: 255, 255, 255;
+  --white: rgb(var(--white-rgb));
+  --button-bg-white: rgba(var(--white-rgb), 0.3);
+  /*--button-bg-disabled: rgba(var(--white-rgb),0.3);
+  --button-bg-focus: rgb(--white-rgb);*/
+
+  --black-rgb: 0, 0, 0;
+  --black: rgb(var(--black-rgb));
+  --button-bg-black: rgba(var(--black-rgb), 0.25);
+
+  --violet-rgb: 50, 66, 92;
+  --violet: rgb(var(--violet-rgb));
+  --buttom-bg-violet: rgba(var(--violet-rgb), 0.3);
+
 }
 
 @font-face {
@@ -165,7 +176,7 @@ img {
 
 .cards-and-slider a {
   text-transform: uppercase;
-  background-color: var(--special-opacity-white);
+  background-color: var(--button-bg-white);
   color: var(--basic-white);
   font-size: 14px;
   text-align: center;
@@ -177,7 +188,7 @@ img {
 }
 
 .inner-tool a {
-  border: 2px solid var(--special-opacity-violet);
+  border: 2px solid var(--buttom-bg-violet);
 }
 
 .cards-and-slider .inner-material {
@@ -302,7 +313,7 @@ img {
   padding-top: 23px;
   padding-bottom: 5px;
   margin-bottom: 105px;
-  background: var(--special-opacity-black);
+  background: var(--button-bg-white);
 }
 
 .subject-slider {
