@@ -246,7 +246,7 @@ img {
   display: block;  
   top: 20px;
 }
-/*.item-material .caption::after,*/
+
 .inner-material .caption::after {  
   background-image: url(../img/materials-icon.svg);
   top: 0;
