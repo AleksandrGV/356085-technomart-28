@@ -159,6 +159,7 @@ img {
   font-weight: bold;
   color: var(--basic-white);
   padding-left: 23px;
+  padding-bottom: 30px;
 }
 
 .cards-and-slider a {
@@ -237,7 +238,7 @@ img {
 }
 
 
-.cards-and-slider .caption::after {
+.cards-and-slider .inner::after {
   content: "";
   position: absolute;
   background-position: center;
@@ -245,31 +246,30 @@ img {
   width: 80px;
   height: 70px;
   display: block;  
-  top: 20px;
+  top: 25px;
 }
 
-.inner-material .caption::after {  
+.inner-material::after {  
   background-image: url(../img/materials-icon.svg);
-  top: 0;
   right: 40px;
 }
 
-.item-tool .caption::after {
+.inner-tool::after {
   background-image: url(../img/tool-icon.svg);
   right: 30px;
 }
 
-.item-equipment .caption::after {
+.inner-equipment::after {
   background-image: url(../img/technique-icon.svg);
   right: 20px;
 }
 
-.item-sale .caption::after {
+.inner-sale::after {
   background-image: url(../img/discount-icon.svg);
   right: 40px;
 }
 
-.item-delivery .caption::after {
+.inner-delivery::after {
   background-image: url(../img/delivery-icon.svg);
   right: 40px;
 }
