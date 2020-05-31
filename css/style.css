@@ -342,15 +342,25 @@ img {
 
 /*Управление слайдером*/
 
-.slider-dots .button {
+.slider-dots {
+  display: flex;
+  flex-direction: row-reverse;
   position: absolute;
+  top: 210px;
+  left: 295px;
+}
+
+.slider-dots li {
+  margin-left: 5px;
+  margin-right: 5px;;
+}
+
+.slider-dots .button {
   background-color: var(--basic-white);
   width: 10px;
-  height: 15px;
+  height: 10px;
   border: 2px solid var(--basic-white);
   border-radius: 50%;
-  top: 215px;
-  left: 330px;
 }
 
 .slider-dots .button-active {
