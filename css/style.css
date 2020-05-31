@@ -363,7 +363,7 @@ img {
 
 .slider-control .button-right {
   transform: rotate(180deg);
-  right: 460px;
+  left: 590px;
 }
 
 /*Блок популярные товары*/
@@ -411,7 +411,7 @@ img {
   margin-bottom: 14px;
 }
 
-.new-price {
+.current-price {
   font-size: 17px;
   color: var(--basic-white);
   background-image: url(../img/red-button.svg);
