@@ -301,7 +301,7 @@ img {
 
 /*Карточка слайда*/
 
-.card-slide {
+.advertising-card {
   width: 100%;
   background-repeat: no-repeat;
   background-image: url(../img/bg-slider-mini-puncher.jpg);
@@ -309,7 +309,7 @@ img {
   margin: 10px;
 }
 
-.card-slide-active {
+.advertising-card-active {
   background-image: url(../img/bg-slider-hammer-drill.jpg);
 }
 
