@@ -31,7 +31,7 @@
 
   --violet-rgb: 50, 66, 92;
   --violet: rgb(var(--violet-rgb));
-  --buttom-bg-violet: rgba(var(--violet-rgb), 0.3);
+  --button-bg-violet: rgba(var(--violet-rgb), 0.3);
 
 }
 
@@ -190,7 +190,7 @@ img {
 }
 
 .inner-tool a {
-  border: 2px solid var(--buttom-bg-violet);
+  border: 2px solid var(--button-bg-violet);
 }
 
 .cards-and-slider .inner-material {
