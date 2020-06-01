@@ -367,7 +367,6 @@ img {
 
 .slider-dots .button-active {
   background-color: var(--basic-red);
-  left: 300px;
 }
 
 .slider-control .button {
