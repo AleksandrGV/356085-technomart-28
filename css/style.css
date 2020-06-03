@@ -157,14 +157,14 @@ img {
 .basket-active {
   background-color: var(--basic-red);
   padding-right: 21px;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .menu-top a:last-child {
-  padding-top: 12px;
+  padding-top: 9px;
   padding-left: 19px;
-  padding-bottom: 11px;
+  padding-bottom: 9px;
   padding-right: 16px;
 }
  
@@ -174,7 +174,7 @@ img {
   background-color: var(--basic-red);
   position: relative;
   width: 220px;
-  height: 47px;
+  height: 42px;
   margin-right: 17px;
 }
 
