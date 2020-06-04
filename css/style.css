@@ -252,12 +252,8 @@ img {
   font-size: 14px;
   color: var(--basic-violet);
   margin: 0;
+  margin-top: 10px;
   text-align: center;
-}
-
-.my-office {
-  display: grid;
-  grid-template-columns: 1fr min-content;
 }
 
 .my-office a {
@@ -270,7 +266,7 @@ img {
   padding-right: 24px;
 }
 
-.my-office a:first-child {
+.my-office .user-name {
   margin-right: 10px;
   padding-left: 45px;
   padding-right: 27px;
@@ -278,9 +274,13 @@ img {
 
 /*Catalog my-office-pafe*/
 
-.my-office-page a:first-child {
+.my-office-page .user-name {
   margin-right: 0;
   padding-right: 10px;
+}
+
+.orders-cabinet {
+  margin-top: 10px;
 }
 
 .orders-cabinet a {
