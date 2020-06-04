@@ -103,7 +103,9 @@ img {
 }
 
 .container {
-  width: 940px;
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 }
 
