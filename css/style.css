@@ -125,6 +125,19 @@ img {
   margin: 0 auto;
 }
 
+.button {
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: center;
+}
+
 /* Заголовок h2*/
 
 .heading {
@@ -267,9 +280,7 @@ img {
 }
 
 .my-office .user-name {
-  margin-right: 10px;
   padding-left: 45px;
-  padding-right: 27px;
 }
 
 /*Catalog my-office-pafe*/
@@ -321,7 +332,7 @@ img {
 
 .cards-and-slider .inner:not(:nth-child(4)) {
   position: relative;
-  width: 280px;
+  width: 300px;
   font-size: 24px;
   font-weight: bold;
   color: var(--basic-white);
@@ -329,19 +340,6 @@ img {
   padding-left: 23px;
   padding-bottom: 21px;
   padding-right: 23px;
-}
-
-.cards-and-slider a {
-  text-transform: uppercase;
-  background-color: var(--button-bg-white);
-  color: var(--basic-white);
-  font-size: 14px;
-  text-align: center;
-  font-weight: normal;
-  padding-left: 23px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 24px;
 }
 
 .inner-tool a {
@@ -398,11 +396,16 @@ img {
 }
 
 .cards-and-slider .caption {
+  font-family: "CuprumBold", "Tahoma", sans-serif;;
   position: relative;
   font-size: 24px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 14px;
+}
+
+.cards-and-slider .button {
+  background-color: var(--button-bg-white);
 }
 
 .cards-and-slider .inner::after {
@@ -490,12 +493,12 @@ img {
   margin-bottom: 10px;
 }
 
-.slide a {
+/*.slide a {
   font-size: 14px;
   text-transform: uppercase;
   background-color: var(--basic-red);
   margin-left: 24px;
-}
+}*/
 
 /*Управление слайдером*/
 
@@ -512,7 +515,7 @@ img {
   margin-right: 5px;
 }
 
-.slider-dots .button {
+.slider-dots .control {
   background-color: var(--basic-white);
   width: 10px;
   height: 10px;
@@ -520,11 +523,11 @@ img {
   border-radius: 50%;
 }
 
-.slider-dots .button-active {
+.slider-dots .control-active {
   background-color: var(--basic-red);
 }
 
-.slider-control .button {
+.slider-control .control {
   width: 22px;
   height: 40px;
   position: absolute;
@@ -536,13 +539,13 @@ img {
   background-position: center;
 }
 
-.slider-control .button-left {
+.slider-control .control-left {
   left: 30px;
 }
 
-.slider-control .button-right {
+.slider-control .control-right {
   transform: rotate(180deg);
-  right: 730px;
+  right: 325px;
 }
 
 /*Блок популярные товары*/
@@ -555,13 +558,6 @@ img {
   font-size: 30px;
   font-weight: normal;
   color: var(--basic-violet);
-}
-
-.popular-block a {
-  text-transform: uppercase;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
-  font-size: 14px;
 }
 
 /*Карточки товаров*/
@@ -621,21 +617,16 @@ img {
 }
 
 .popular-card-manufacturers a {
-  position: relative;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border: 1px solid var(--basic-gray);
   text-align: center;
-  display: block;
 }
 
 .popular-card-manufacturers img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+  align-self: center;
 }
 
 /*Блок service*/
@@ -651,7 +642,7 @@ img {
   font-family: "PTSans", "Tahoma", sans-serif;
 }
 
-.tabs a {
+.tabs .link-tabs {
   font-size: 21px;
   background-color: var(--basic-violet);
 }
@@ -669,9 +660,7 @@ img {
 }
 
 .tabs .credit-button {
-  text-transform: uppercase;
-  background-color: var(--basic-red);
-  color: var(--basic-white);
+  border-radius: 2px;
 }
 
 .item-tabs {
@@ -730,25 +719,14 @@ img {
   margin-bottom: 30px;
 }
 
-.about-company a {
+.about-company .button {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.about-company a,
-.maps a:last-child {
-  background-color: var(--basic-red);
-  text-transform: uppercase;
-  font-size: 14px;
-  color: var(--basic-white);
-  padding-top: 11px;
-  padding-bottom: 9px;
-  text-align: center;
-}
-
 .maps .maps-link {
   background-color: transparent;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 /*Блок хлебные крошки*/
