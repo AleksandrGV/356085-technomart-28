@@ -283,14 +283,14 @@ img {
   margin-top: 10px;
 }
 
-.orders-cabinet a {
+.orders-cabinet .link {
   font-size: 16px;
   color: var(--basic-violet);
   background: none;
   padding: 0;
 }
 
-.orders-cabinet a:first-child {
+.orders-cabinet .my-orders {
   padding-right: 31px;
   padding-left: 30px;
 }
