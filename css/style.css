@@ -404,7 +404,7 @@ img {
   margin-bottom: 14px;
 }
 
-.cards-and-slider .button {
+.inner .button {
   background-color: var(--button-bg-white);
 }
 
@@ -467,7 +467,7 @@ img {
   margin: 10px;
 }
 
-.advertising-card-active {
+.advertising-card-rotary-hammers {
   background-image: url(../img/bg-slider-hammer-drill.jpg);
 }
 
@@ -493,12 +493,9 @@ img {
   margin-bottom: 10px;
 }
 
-/*.slide a {
-  font-size: 14px;
-  text-transform: uppercase;
-  background-color: var(--basic-red);
+.slide a {
   margin-left: 24px;
-}*/
+}
 
 /*Управление слайдером*/
 
