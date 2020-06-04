@@ -126,7 +126,6 @@ img {
 
 .header {
   background-color: var(--basic-light-blue);
-  margin-bottom: 59px;
 }
 
 .header-top {
@@ -317,6 +316,10 @@ img {
 }
 
 /*Catds and Slider*/
+
+.cards-and-slider {
+  padding-top: 60px;
+}
 
 .cards-and-slider .inner:not(:nth-child(4)) {
   position: relative;
