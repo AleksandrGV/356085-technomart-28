@@ -235,11 +235,6 @@ img {
   line-height: 23px;
 }
 
-.contact-tel {
-  display: flex;
-  flex-direction: column;
-}
-
 .link-header {
   font-size: 21px;
   font-family: "CuprumBold", "Tahoma", sans-serif;
