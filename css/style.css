@@ -204,7 +204,6 @@ img {
 
 .header-middle {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -286,7 +285,6 @@ img {
 
 .main-menu .list {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   background-color: var(--basic-violet);
   box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
@@ -687,7 +685,6 @@ img {
 
 .about-company-and-contacts {
   display: flex;
-  flex-direction: row;  
   justify-content: space-between;
   margin-bottom: 70px;
 }
@@ -797,7 +794,6 @@ img {
 
 .footer-menu .list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -848,7 +844,6 @@ img {
 
 .socials {
   display: flex;
-  flex-direction: row;
 }
 
 .social-icon {
