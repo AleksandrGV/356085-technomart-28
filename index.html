@@ -54,11 +54,11 @@
       </nav>
     </div>
   </header>
-  <main class="container">
+  <main>
     <!--Catds and Slider-->
-    <section class="cards-and-slider">
+    <section class="cards-and-slider container">
       <h5 class="visually-hidden">Промо блок со слайдером</h5>
-      <ul class="list">
+      <ul class="list  list-cards-and-slider">
         <li class="item">
           <article class="inner inner-material">
             <span class="new">New</span>
@@ -90,7 +90,7 @@
                 <a href="#!" class="button">открыть каталог</a>
               </article>
             </li>
-            <li class="slide">
+            <li class="slide not-active">
               <article class="advertising-card advertising-card-drill">
                 <div class="slide-opacity">
                   <h2 class="subject-slider">Дрели</h2>
@@ -141,12 +141,12 @@
       </ul>
     </section>
     <!--Блок популярные товары-->
-    <section class="popular-goods">
+    <section class="popular-goods container">
       <div class="popular-block">
         <h2 class="heading">Популярные товары</h2>
         <a href="#!" class="button">Все популярные товары</a>
       </div>
-      <ul class="list">
+      <ul class="list list-popular-block">
         <li>
           <article class="product-card">
             <img src="img/wire-hammer.png" width="184" height="164" alt="Перфоратор Bosch, модель BFG 9000">
@@ -185,12 +185,12 @@
       </ul>
     </section>
     <!--Популярные производители-->
-    <section class="popular-manufacturers">
+    <section class="popular-manufacturers container">
       <div class="popular-block">
         <h2 class="heading">Популярные производители:</h2>
         <a href="#!" class="button">Все производители</a>
       </div>
-      <ul class="list">
+      <ul class="list list-popular-manufacturers">
         <li class="popular-card-manufacturers">
           <a href="#!">
             <img src="img/bosch-banner.png" width="126" height="37" alt="Техника Bosch">
@@ -235,51 +235,54 @@
     </section>
     <!--Сервисы-->
     <section class="service">
-      <h2 class="heading">Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-      </p>
-      <div class="tabs">
-        <ul class="list">
-          <li>
-            <a href="#delivery" class="link-tabs active">Доставка</a>
-          </li>
-          <li>
-            <a href="#guarantee" class="link-tabs">Гарантия</a>
-          </li>
-          <li>
-            <a href="#credit" class="link-tabs">Кредит</a>
-          </li>
-        </ul>
-        <ul class="list tabs-list">
-          <li id="delivery" class="item-tabs delivery-tabs">
-            <h3 class="subtitle">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! <br>
-              Ведь мы неплохо заработаем, <br>
-              поднимая его на ваш этаж!
-            </p>
-          </li>
-          <li id="guarantee" class="item-tabs guarantee-tabs">
-            <h3 class="subtitle">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит,
-              а также в случае пожара, спровоцированного его возгоранием,
-              вы всегда можете быть уверены в нашей гарантии.
-              Мы обменяем сгоревший товар на новый.
-              Дом уж восстановите как-нибудь сами.
-            </p>
-          </li>
-          <li id="credit" class="item-tabs credit-tabs">
-            <h3 class="subtitle">Кредит</h3>
-            <p>Залезть в долговую яму стало проще!
-              Кредитные консультанты придут вам на помощь.
-            </p>
-            <a href="#!" class="button credit-button">Отправить заявку</a>
-          </li>
-        </ul>
+      <div class="container">
+        <h2 class="heading">Сервисы</h2>
+        <p class="service-lead">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+        <div class="tabs">
+          <ul class="list tabs-list-link">
+            <li>
+              <a href="#delivery" class="link-tabs active">Доставка</a>
+            </li>
+            <li>
+              <a href="#guarantee" class="link-tabs">Гарантия</a>
+            </li>
+            <li>
+              <a href="#credit" class="link-tabs">Кредит</a>
+            </li>
+          </ul>
+          <ul class="list tabs-list">
+            <li id="delivery" class="item-tabs delivery-tabs">
+              <h3 class="subtitle">Доставка</h3>
+              <p class="text-tabs">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! <br>
+                Ведь мы неплохо заработаем, <br>
+                поднимая его на ваш этаж!
+              </p>
+            </li>
+            <li id="guarantee" class="item-tabs guarantee-tabs">
+              <h3 class="subtitle">Гарантия</h3>
+              <p class="text-tabs">Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгоранием,
+                вы всегда можете быть уверены в нашей гарантии.
+                Мы обменяем сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li id="credit" class="item-tabs credit-tabs">
+              <h3 class="subtitle">Кредит</h3>
+              <p class="text-tabs">Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a href="#!" class="button credit-button">Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <div class="about-company-and-contacts">
+
+    <div class="about-company-and-contacts container">
       <section class="about-company">
         <h2 class="heading">Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь!
