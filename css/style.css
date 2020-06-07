@@ -18,6 +18,7 @@
   --basic-purple-light: #F2F6F8;
   --basic-dark-blue-icon: #212A3A;
   --basic-gray: #EAEAEA;
+  --basic-gray-light: #E5E5E5;
 
   --white-rgb: 255, 255, 255;
   --white: rgb(var(--white-rgb));
@@ -330,15 +331,22 @@ img {
   padding-top: 60px;
 }
 
+.list-cards-and-slider {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .cards-and-slider .inner:not(:nth-child(4)) {
   position: relative;
   width: 300px;
   font-size: 24px;
   font-weight: 700;
   color: var(--basic-white);
-  padding-top: 20px;
+  padding-top: 28px;
   padding-left: 23px;
-  padding-bottom: 21px;
+  padding-bottom: 30px;
   padding-right: 23px;
 }
 
@@ -447,6 +455,10 @@ img {
 /*Слайдер*/
 
 .item-slider {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
   position: relative;
 }
 
@@ -455,6 +467,7 @@ img {
   padding: 0;
   width: 620px;
   color: var(--basic-white);
+
 }
 
 /*Карточка слайда*/
@@ -463,8 +476,7 @@ img {
   width: 100%;
   background-repeat: no-repeat;
   background-image: url(../img/bg-slider-mini-puncher.jpg);
-  padding-bottom: 27px;
-  margin: 10px;
+  padding-bottom: 32px;
 }
 
 .advertising-card-rotary-hammers {
@@ -485,6 +497,10 @@ img {
   margin-top: 0;
   margin-left: 24px;
   margin-bottom: 10px;
+}
+
+.not-active {
+  display: none;
 }
 
 .slide p {
@@ -542,12 +558,19 @@ img {
 
 .slider-control .control-right {
   transform: rotate(180deg);
-  right: 325px;
+  right: 15px;
 }
 
 /*Блок популярные товары*/
 
 .popular-block {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 28px;
+  padding-right: 15px;
+  margin-top: 60px;
   background-color: var(--basic-light-beige);
 }
 
@@ -557,16 +580,31 @@ img {
   color: var(--basic-violet);
 }
 
+.list-popular-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.list-popular-block li,
+.list-catalog li {
+  display: flex;
+}
+
 /*Карточки товаров*/
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   font-family: "PTSans", "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 700;
   width: 200px;
   border: 1px solid var(--basic-gray);
-  margin: 10px;
   padding-top: 40px;
   padding-left: 10px;
   padding-right: 10px;
@@ -610,7 +648,17 @@ img {
 .popular-card-manufacturers {
   width: 220px;
   height: 145px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.list-popular-manufacturers,
+.list-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .popular-card-manufacturers a {
@@ -630,6 +678,8 @@ img {
 
 .service {
   background-color: var(--basic-light-blue);
+  padding-top: 64px;
+  padding-bottom: 100px;
   margin-bottom: 70px;
 }
 
@@ -639,9 +689,30 @@ img {
   font-family: "PTSans", "Tahoma", sans-serif;
 }
 
+.service-lead {
+  width: 395px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  position: relative;
+}
+
+.tabs-list-link li {
+  display: flex;
+  width: 240px;
+  margin-right: 80px;
+}
+
 .tabs .link-tabs {
+  width: 100%;
   font-size: 21px;
   background-color: var(--basic-violet);
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 22px;
 }
 
 .tabs .active {
@@ -650,10 +721,11 @@ img {
 }
 
 .tabs .subtitle {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 400;
   color: var(--basic-violet);
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 .tabs .credit-button {
@@ -663,19 +735,37 @@ img {
 .item-tabs {
   display: inline-block;
   vertical-align: top;
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
-.delivery-tabs {
+.text-tabs {
+  width: 315px;
+  padding-right: 35px;
+}
+
+.guarantee-tabs,
+.credit-tabs {
+  display: none;
+}
+
+.item-tabs::after {
+  content: "";
+  display: block;
+  width: 468px;
+  height: 261px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.delivery-tabs::after {
   background-image: url(../img/delivery-icon.png);
 }
 
-.guarantee-tabs {
+.guarantee-tabs::after {
   background-image: url(../img/guarantee-icon.png);
 }
 
-.credit-tabs {
+.credit-tabs::after {
   background-image: url(../img/credit-icon.png);
 }
 
@@ -728,10 +818,18 @@ img {
 
 /*Блок хлебные крошки*/
 
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .breadcrumbs a {
+  position: relative;
   font-family: "PTSans", "Tahoma", sans-serif;
   text-transform: uppercase;
   color: var(--basic-dark);
+  margin-right: 40px;
 }
 
 .breadcrumbs .home {
@@ -742,16 +840,46 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+/*Catalog*/ 
+
+.wrap-catalog {
+  display: flex;
+  align-items: baseline;
+}
 
 .catalog .heading {
+  font-weight: 400;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   background-color: var(--basic-light-blue);
   color: var(--basic-violet);
+}
+
+.list-catalog li {
+  margin-bottom: 20px;
+}
+
+/*SORT*/
+
+.sort {
+  display: flex;
+  align-items: baseline;
+}
+
+.list-sort {
+  display: flex;
+}
+
+.list-sort li {
+  margin-right: 65px;
 }
 
 /*форма с фильтром*/
 
 .form-filter {
   width: 220px;
+  margin-right: 20px;
 }
 
 .catalog-subtitle,
@@ -759,6 +887,57 @@ img {
   font-family: "PTSans", "Tahoma", sans-serif;
   background-color: var(--basic-beige);
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  margin: 0;
+}
+
+.sort .catalog-subtitle {
+  margin-right: auto;
+  padding: 0;
+}
+
+/*Переключение страниц*/
+
+.pagination {
+  display: flex;
+}
+
+.button-pagination {
+  font-family: "PTSans", "Tahoma", sans-serif;
+  color: var(--basic-dark);
+  border: 1px solid var(--basic-gray-light);
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+}
+
+.button-pagination-next {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.button-pagination-active {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+/*Пара слов о перфораторах*/
+
+.about-rotary-hammers {
+  background-color: var(--basic-light-blue);
+  padding-top: 64px;
+  padding-left: 20px;
+  padding-bottom: 70px;
+  margin-top: 60px;
+}
+
+.about-rotary-hammers .heading {
+  font-weight: 400;
 }
 
 /* Подвал */
