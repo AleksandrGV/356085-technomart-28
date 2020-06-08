@@ -736,21 +736,16 @@ img {
 }
 
 .item-tabs {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.text-tabs {
-  width: 315px;
-  padding-right: 35px;
-}
-
-.item-tabs {
   display: none;
 }
 
 .item-tabs-active {
   display: block;
+}
+
+.text-tabs {
+  width: 315px;
+  padding-right: 35px;
 }
 
 .item-tabs::after {
