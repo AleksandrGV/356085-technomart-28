@@ -570,7 +570,6 @@ img {
 .popular-block {
   display: flex;
   align-items: center;
-  align-content: center;
   justify-content: space-between;
   padding-left: 28px;
   padding-right: 15px;
