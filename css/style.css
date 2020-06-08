@@ -745,9 +745,12 @@ img {
   padding-right: 35px;
 }
 
-.guarantee-tabs,
-.credit-tabs {
+.item-tabs {
   display: none;
+}
+
+.item-tabs-active {
+  display: block;
 }
 
 .item-tabs::after {
