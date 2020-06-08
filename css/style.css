@@ -499,13 +499,13 @@ img {
   margin-bottom: 10px;
 }
 
-/*.slide {
+.slide {
   display: none;
 }
 
 .active-slide {
   display: block;
-}*/
+}
 
 .slide p {
   font-size: 18px;
