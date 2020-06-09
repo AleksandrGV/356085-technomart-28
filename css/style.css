@@ -177,6 +177,12 @@ img {
   padding-right: 15px;
 }
 
+.search-button:hover,
+.menu-top .bookmarks:hover::before,
+.menu-top .basket:hover::before {
+ opacity: 1;
+}
+
 .menu-top .bookmarks {
   position: relative;
   margin-right: 26px;
@@ -216,6 +222,7 @@ img {
   width: 15px;
   height: 15px;
   background-image: url(../img/icon-basket.svg);
+  background-color: transparent;
   left: 10px;
 }
 
