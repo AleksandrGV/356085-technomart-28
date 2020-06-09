@@ -164,7 +164,7 @@ img {
 
 .menu-top {
   display: flex;
-  margin-bottom: 37px;
+  margin-bottom: 15px;
 }
 
 .header-top a {
@@ -172,24 +172,55 @@ img {
   color: var(--basic-white);
   font-size: 18px;
   padding-top: 9px;
-  padding-left: 19px;
+  padding-left: 17px;
   padding-bottom: 9px;
-  padding-right: 16px;
+  padding-right: 15px;
 }
 
-.menu-top .checkout {
-  background-color: var(--basic-green);
-  padding-right: 26px;
-  padding-left: 35px;
+.menu-top .bookmarks {
+  position: relative;
+  margin-right: 26px;
+  padding-left: 23px;
 }
 
 .menu-top .basket {
-  padding-left: 35px;
-  padding-right: 26px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 28px;
 }
 
 .basket-active {
   background-color: var(--basic-red);
+}
+
+.menu-top .bookmarks::before,
+.menu-top .basket::before {
+  display: block;
+  content: "";
+  background-color: var(--basic-dark-blue);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+
+.menu-top .bookmarks::before {
+  width: 14px;
+  height: 16px;
+  background-image: url(../img/bookmark-icon.svg);
+}
+
+.menu-top .basket::before {
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon-basket.svg);
+  left: 10px;
+}
+
+.menu-top .checkout {
+  background-color: var(--basic-green);
 }
 
 .logo {
@@ -215,8 +246,10 @@ img {
 }
 
 .menu-search {
+  display: flex;
   align-self: center;
   margin-right: auto;
+  position: relative;
 }
 
 .site-search {
@@ -225,6 +258,19 @@ img {
   font-size: 18px;
   border: none;
   padding-left: 25px;
+}
+
+.search-button {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: var(--basic-dark-blue);
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .site-search::placeholder {
@@ -236,8 +282,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
-  padding-left: 30px;
+  margin-bottom: 30px;
+  padding-left: 33px;
 }
 
 .header-middle h2 {
@@ -247,9 +293,16 @@ img {
   font-size: 16px;
   font-weight: normal;
   line-height: 23px;
+  margin-top: 30px;
+}
+
+.contact-tel {
+  margin-top: 30px;
+  margin-left: 41px;
 }
 
 .link-header {
+  position: relative;
   font-size: 21px;
   font-weight: 700;
   text-align: center;
@@ -258,8 +311,22 @@ img {
   padding-left: 74px;
   padding-top: 7px;
   padding-bottom: 8px;
-  padding-right: 48px;
+  padding-right: 40px;
   margin-bottom: 3px;
+  margin-right: 10px;
+}
+
+.link-header::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 39px;
+  background-color: var(--basic-light);
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
 }
 
 .tagline-header {
@@ -274,24 +341,75 @@ img {
   font-size: 21px;
   color: var(--basic-dark);
   background-color: var(--basic-white);
-  padding-top: 12px;
-  padding-left: 24px;
-  padding-bottom: 12px;
-  padding-right: 24px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 22px;
+}
+
+.my-office .input {
+  position: relative;
+  margin-right: 10px;
+  padding-left: 45px;
+  padding-right: 27px;
+}
+
+.my-office .input::before {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 17px;
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  background-color: var(--basic-white);
+  background-image: url(../img/icon-login.svg);
+  background-repeat: no-repeat;
 }
 
 .my-office .user-name {
-  padding-left: 45px;
+  padding-left: 56px;
 }
 
 /*Catalog my-office-pafe*/
 
+.my-office-page {
+  margin-top: 32px;
+  padding-left: 5px;
+}
+
 .my-office-page .user-name {
+  position: relative;
   margin-right: 0;
-  padding-right: 10px;
+  padding-right: 14px;
+}
+
+.my-office-page .user-name::before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  background-color: var(--basic-white);
+  background-image: url(../img/icon-user.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.my-office-page .exit {
+  width: 20px;
+  height: 17px;
+  background-color: var(--basic-white);
+  background-image: url(../img/icon-logout.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .orders-cabinet {
+  text-align: center;
+  margin-right: 32px;
   margin-top: 10px;
 }
 
@@ -303,17 +421,39 @@ img {
 }
 
 .orders-cabinet .my-orders {
-  padding-right: 31px;
+  position: relative;
+  padding-right: 30px;
   padding-left: 30px;
+}
+
+.orders-cabinet .my-orders::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--basic-violet);
+  border-radius: 50%;
 }
 
 .main-menu .list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-color: var(--basic-violet);
   box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
-  padding: 15px 0 17px;
+  padding: 17px 0 17px;
   margin-bottom: 60px;
+}
+
+.main-menu li:first-child {
+  margin-left: 22px;
+}
+
+.main-menu li:last-child {
+  margin-right: 18px;
 }
 
 .main-menu a {
@@ -321,8 +461,8 @@ img {
   font-size: 18px;
   padding-top: 16px;
   padding-bottom: 20px;
-  padding-left: 34px;
-  padding-right: 30px;
+  padding-left: 27px;
+  padding-right: 24px;
 }
 
 /*Catds and Slider*/
@@ -821,25 +961,45 @@ img {
 
 .breadcrumbs {
   display: flex;
-  align-items: center;
   margin-top: 20px;
 }
 
-.breadcrumbs a {
+.breadcrumbs li {
+  align-self: flex-start;
   position: relative;
+  margin-right: 42px;
+}
+
+.breadcrumbs a {
   font-family: "PTSans", "Tahoma", sans-serif;
   text-transform: uppercase;
   color: var(--basic-dark);
-  margin-right: 40px;
 }
+
 
 .breadcrumbs .home {
   display: block;
   width: 14px;
-  height: 12px;
+  height: 20px;
   background-image: url(../img/icon-home.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.breadcrumbs li::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: -24px;
+  background-color: var(--basic-white);
+  background-image: url(../img/icon-right-small.svg);
+}
+
+.breadcrumbs li:last-child::before {
+  display: none;
 }
 /*Catalog*/ 
 
