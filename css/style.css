@@ -590,14 +590,15 @@ img {
   text-transform: uppercase;
   line-height: 18px;
   position: absolute;
-  top: 5px;
-  right: -25px;
+  top: 15px;
+  right: 15px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 40px;
   padding-right: 40px;
   background-color: var(--basic-red);
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateX(50%);
+  transform-origin: 100% 0;
   z-index: 20;
 }
 
