@@ -1257,7 +1257,7 @@ img {
   align-self: center;
 }
 
-.footer-top .footer-menu a:hover,
+.footer-menu a:hover,
 .feedback-email a:hover,
 .developer-site a:hover {
   text-decoration: underline;
