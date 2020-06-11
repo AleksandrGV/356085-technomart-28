@@ -421,14 +421,14 @@ img {
   color: var(--special-gray);
 }
 
-.my-office .input {
+.my-office .sign-in {
   position: relative;
   margin-right: 10px;
   padding-left: 45px;
   padding-right: 27px;
 }
 
-.my-office .input::before {
+.my-office .sign-in::before {
   display: block;
   content: "";
   width: 20px;
@@ -441,11 +441,11 @@ img {
   background-repeat: no-repeat;
 }
 
-.my-office .input:hover::before {
+.my-office .sign-in:hover::before {
   background-image: url("../img/icon-login-hover.svg");
 }
 
-.my-office .input:active::before {
+.my-office .sign-in:active::before {
   background-image: url("../img/icon-login.svg");
 }
 
