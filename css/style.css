@@ -27,6 +27,7 @@
   --special-dark-blue: #161D29;
   --special-gray: #C5C5C5;
   --special-red: #BA2732;
+  --special-dark-azure: #3D546F;
 
   --white-rgb: 255, 255, 255;
   --white: rgb(var(--white-rgb));
@@ -424,40 +425,26 @@ img {
 .my-office .sign-in {
   position: relative;
   margin-right: 10px;
-  padding-left: 45px;
   padding-right: 27px;
 }
 
-.my-office .sign-in::before {
-  display: block;
-  content: "";
-  width: 20px;
-  height: 17px;
-  position: absolute;
-  top: 14px;
-  left: 17px;
-  background-color: var(--basic-white);
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
+.sign-in:hover path,
+.user-name:hover path,
+.exit:hover path {
+  fill: var(--special-dark-azure);
 }
 
-.my-office .sign-in:hover::before {
-  background-image: url("../img/icon-login-hover.svg");
-}
-
-.my-office .sign-in:active::before {
-  background-image: url("../img/icon-login.svg");
-}
-
-.my-office .user-name {
-  padding-left: 56px;
+.sign-in:active path,
+.user-name:active path,
+.exit:active path {
+  fill: var(--special-gray);
 }
 
 /*Catalog my-office-pafe*/
 
 .my-office-page {
   margin-top: 32px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .my-office-page .user-name {
@@ -466,51 +453,12 @@ img {
   padding-right: 14px;
 }
 
-.my-office-page .user-name:hover {
-  color: var(--basic-dark);
-}
+.my-office svg {
+  margin-right: 10px;
+} 
 
 .my-office-page .user-name:active {
   color: var(--special-gray);
-}
-
-.my-office-page .user-name::before {
-  content: "";
-  width: 20px;
-  height: 18px;
-  position: absolute;
-  top: 13px;
-  left: 15px;
-  background-color: var(--basic-white);
-  background-image: url("../img/icon-user.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-
-.my-office-page .user-name:hover::before {
-  background-image: url("../img/icon-user-hover.svg");
-}
-
-.my-office-page .user-name:active::before {
-  background-image: url("../img/icon-user.svg");
-}
-
-.my-office-page .exit {
-  width: 20px;
-  height: 17px;
-  background-color: var(--basic-white);
-  background-image: url("../img/icon-logout.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.my-office-page .exit:hover {
-  background-image: url("../img/icon-logout-hover.svg");
-}
-
-.my-office-page .exit:active {
-  background-image: url("../img/icon-logout.svg");
 }
 
 .orders-cabinet {
