@@ -11,7 +11,7 @@
   --basic-orange-dark: #FFC047;
   --basic-light-beige: #F9F5F0;
   --basic-light-blue: #F1F5F7;
-  --basic-dark: #000000;
+  --basic-black: #000000;
   --basic-violet: #32425C;
   --basic-gold: #FFD180;
   --basic-beige: #F7F3EC;
@@ -88,6 +88,14 @@
   font-style: normal;
   src: url("../fonts/pt-sans/pt-sans-regular.woff2") format("woff2"), 
        url("../fonts/pt-sans/pt-sans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTSans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/pt-sans/pt-sans-bold.woff2") format("woff2"), 
+       url("../fonts/pt-sans/pt-sans-bold.woff2") format("woff");
 }
 
 .visually-hidden {
@@ -249,7 +257,6 @@ img {
   left: 20px;
 }
 
-
 .menu-top .bookmarks::before {
   width: 14px;
   height: 16px;
@@ -316,27 +323,27 @@ img {
 .search-button {
   align-self: center;
   position: absolute;
-  left: 17px;
-  width: 17px;
-  height: 17px;
+  padding: 0;
+  background: none;
   border: none;
-  background-color: var(--basic-dark-blue);
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  fill-opacity: 0;
+  left: 17px;
   opacity: 0.3;
-}
-
-/*Пока не понимаю как его сделать*/
-.search-button:focus {
-  background-color: var(--basic-white);
-  background-image: url(../img/icon-search-red.svg);
 }
 
 .site-search:focus {
   background-color: var(--basic-white);
+  color: var(--basic-black);
   padding: 11px;
   padding-left: 45px;
+  outline: none;
+  opacity: 1;
+}
+
+input.site-search:focus + .search-button .svg-search path {
+  fill: var(--basic-red);
+}
+
+.search-button:active {
   outline: none;
 }
 
@@ -900,7 +907,7 @@ img {
 
 .old-price {
   font-size: 17px;
-  color: var(--basic-gray);
+  color: var(--basic-gray-dark);
   display: block;
   margin-bottom: 14px;
 }
@@ -1184,6 +1191,7 @@ img {
 .catalog-subtitle,
 .sort {
   font-family: "PTSans", "Tahoma", sans-serif;
+  font-weight: 400;
   background-color: var(--basic-beige);
   text-transform: uppercase;
   padding-top: 10px;
@@ -1263,7 +1271,7 @@ img {
   text-decoration: underline;
 }
 
-.footer-top .footer-menu a:active {
+.footer-menu a:active {
   opacity: 0.5;
 }
 
