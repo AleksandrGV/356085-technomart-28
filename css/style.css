@@ -844,7 +844,7 @@ img {
   flex-direction: column;
   background-color: var(--basic-white);
   width: 184px;
-  height: 164px;
+  min-height: 164px;
   z-index: 0;
 }
 
