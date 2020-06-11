@@ -497,7 +497,6 @@ img {
   flex-wrap: wrap;
   background-color: var(--basic-violet);
   box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
-  padding: 17px 0 17px;
   margin-bottom: 60px;
 }
 
@@ -510,6 +509,7 @@ img {
 }
 
 .main-menu a {
+  display: block;
   color: var(--basic-white);
   font-size: 18px;
   padding-top: 18px;
