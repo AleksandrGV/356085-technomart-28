@@ -215,14 +215,20 @@ img {
   background-color: var(--special-dark-blue);
 }
 
-.menu-top .bookmarks {
+.menu-top .bookmarks,
+.menu-top .basket {
+  display: flex;
+  align-items: center;
   position: relative;
+
+}
+
+.menu-top .bookmarks {
   padding-left: 45px;
   padding-right: 20px;
 }
 
 .menu-top .basket {
-  position: relative;
   padding-left: 30px;
   padding-right: 28px;
 }
@@ -239,7 +245,6 @@ img {
   background-repeat: no-repeat;
   opacity: 0.3;
   position: absolute;
-  top: 12px;
   left: 20px;
 }
 
@@ -308,8 +313,8 @@ img {
 }
 
 .search-button {
+  align-self: center;
   position: absolute;
-  top: 2px;
   left: 17px;
   width: 17px;
   height: 17px;
@@ -363,6 +368,7 @@ img {
 }
 
 .link-header {
+  align-items: center;
   position: relative;
   font-size: 21px;
   font-weight: 700;
@@ -383,7 +389,6 @@ img {
   height: 19px;
   display: block;
   position: absolute;
-  top: 10px;
   left: 39px;
   background-color: var(--basic-light);
   background-image: url("../img/icon-phone.svg");
