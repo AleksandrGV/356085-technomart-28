@@ -321,12 +321,13 @@ img {
 }
 
 .search-button {
-  align-self: center;
   position: absolute;
   padding: 0;
   background: none;
   border: none;
   left: 17px;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0.3;
 }
 
@@ -397,10 +398,11 @@ img {
   height: 19px;
   display: block;
   position: absolute;
+  top: 50%;
   left: 39px;
-  background-color: var(--basic-light);
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
+  transform: translateY(-50%);
 }
 
 .tagline-header {
@@ -412,6 +414,7 @@ img {
 }
 
 .my-office a {
+  position: relative;
   font-size: 21px;
   color: var(--basic-dark);
   background-color: var(--basic-white);
@@ -433,6 +436,7 @@ img {
   position: relative;
   margin-right: 10px;
   padding-right: 27px;
+  padding-left: 46px;
 }
 
 .sign-in:hover path,
@@ -458,11 +462,22 @@ img {
   position: relative;
   margin-right: 0;
   padding-right: 14px;
+  padding-left: 50px;
 }
 
+
+/*Вертикальное позиционирование по середине top: 50%; transform: translateY(-50%);*/
+
 .my-office svg {
-  margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
 } 
+
+.exit svg {
+  left: 5px;
+}
 
 .my-office-page .user-name:active {
   color: var(--special-gray);
@@ -637,8 +652,8 @@ img {
   background-repeat: no-repeat;
   width: 80px;
   height: 70px;
-  display: block;  
-  top: 25px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .inner-material::after {  
@@ -852,6 +867,7 @@ img {
   background-color: var(--basic-white);
   width: 184px;
   min-height: 164px;
+  padding-top: 25px;
   z-index: 0;
 }
 
@@ -878,9 +894,10 @@ img {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 15px;
+  top: 50%;
   left: 30px;
   background-image: url(../img/icon-basket.svg);
+  transform: translateY(-50%);
 }
 
 .buy-to-bookmarks .buy-tool:hover {
@@ -1137,10 +1154,11 @@ img {
   height: 12px;
   display: block;
   position: absolute;
-  top: 5px;
+  top: 50%;
   right: -24px;
   background-color: var(--basic-white);
   background-image: url("../img/icon-right-small.svg");
+  transform: translateY(-50%);
 }
 
 .breadcrumbs li:last-child::before {
