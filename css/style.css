@@ -1300,6 +1300,7 @@ img {
 
 .form-filter fieldset:first-child {
   margin-bottom: 40px;
+  margin-top: 15px;
 }
 
 .range-controls {
@@ -1451,7 +1452,6 @@ img {
   padding-bottom: 10px;
   padding-left: 18px;
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .sort .catalog-subtitle {
