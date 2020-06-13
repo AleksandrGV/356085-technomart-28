@@ -95,7 +95,7 @@
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/pt-sans/pt-sans-bold.woff2") format("woff2"), 
-       url("../fonts/pt-sans/pt-sans-bold.woff2") format("woff");
+       url("../fonts/pt-sans/pt-sans-bold.woff") format("woff");
 }
 
 .visually-hidden {
