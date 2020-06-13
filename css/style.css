@@ -339,7 +339,7 @@ img {
   opacity: 1;
 }
 
-input.site-search:focus + .search-button .svg-search path {
+.site-search:focus + .search-button path {
   fill: var(--basic-red);
 }
 
