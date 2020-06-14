@@ -1399,11 +1399,6 @@ img {
 
 /*Чекбокс и радио*/
 
-.form-filter ul {
-  list-style: none;
-  padding: 0;
-}
-
 .list-form li {
   display: flex;
   align-items: center;
