@@ -1255,7 +1255,7 @@ img {
   opacity: 0.3;
 }
 
-.item-sort a:not(.arrow-link):not(.active) {
+.item-sort .sort-link {
   border-bottom: 1px dotted var(--basic-red);
 }
 
