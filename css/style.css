@@ -1032,7 +1032,7 @@ img {
   position: absolute;
   top: -50px;
   left: 230px;
-  background-image: url("../img/vertical-separator.svg");
+  background-image: url("../img/vertical-separator.png");
 }
 
 .tabs-list-link li {
