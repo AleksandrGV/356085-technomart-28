@@ -310,7 +310,7 @@ img {
   left: 0;
   right: 0;
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px var(--logo-box-shadow);
+  box-shadow: inset 0 -5px 0 var(--logo-box-shadow);
 }
 
 .menu-search {
@@ -527,7 +527,7 @@ img {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: var(--basic-violet);
-  box-shadow: inset 0px -5px 0px var(--basic-dark-blue);
+  box-shadow: inset 0 -5px 0 var(--basic-dark-blue);
   margin-bottom: 60px;
 }
 
@@ -864,7 +864,7 @@ img {
 
 .product-card:hover,
 .popular-card-manufacturers a:hover {
-  box-shadow: 0px 4px 20px var(--product-card-box-shadow);
+  box-shadow: 0 4px 20px var(--product-card-box-shadow);
 }
 
 .product-card h3 {
@@ -895,7 +895,7 @@ img {
   position: relative;
   margin-bottom: 10px;
   background-color: var(--basic-green);
-  box-shadow: inset 0px -3px 0px var(--special-dark-green);
+  box-shadow: inset 0 -3px 0 var(--special-dark-green);
   text-align: end;
 }
 
@@ -1047,7 +1047,7 @@ img {
   font-weight: 700;
   color: var(--basic-white);
   background-color: var(--basic-violet);
-  box-shadow: 0px 1px 0px var(--basic-dark-blue), inset 0px 1px 0px var(--special-dark-violet);
+  box-shadow: 0 1px 0 var(--basic-dark-blue), inset 0 1px 0 var(--special-dark-violet);
   padding-top: 14px;
   padding-bottom: 17px;
   padding-left: 22px;
@@ -1061,7 +1061,7 @@ img {
 .tabs .active {
   color: var(--basic-violet);
   background-color: var(--basic-white);
-  box-shadow: none0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
+  box-shadow: 0 1px 0 var(--basic-white), inset 0 1px 0 var(--basic-white);
 }
 
 .tabs .subtitle {
