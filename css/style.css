@@ -990,7 +990,7 @@ img {
   align-self: center;
 }
 
-.popular-card-manufacturers:active {
+.popular-card-manufacturers a:active {
   opacity: 0.5;
 }
 
