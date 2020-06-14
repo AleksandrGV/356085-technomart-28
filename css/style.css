@@ -1397,6 +1397,8 @@ img {
   font-weight: 700;
 }
 
+/*Чекбокс и радио*/
+
 .form-filter ul {
   list-style: none;
   padding: 0;
@@ -1418,8 +1420,38 @@ img {
   cursor: pointer;
 }
 
+.input-filter-radio + label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: var(--basic-white);
+  border: 4px solid var(--special-gray);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.input-filter-radio:checked + label::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  background-color: var(--special-gray);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
 .icon-filter {
   margin-right: 10px;
+}
+
+.input-filter-radio + label:hover::before {
+  border-color: var(--special-dark-gray);
+}
+
+.input-filter-radio:checked + label:hover::after {
+  background-color: var(--special-dark-gray);
 }
 
 .item-form label:hover path {
