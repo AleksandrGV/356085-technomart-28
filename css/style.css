@@ -1128,7 +1128,6 @@ img {
 }
 
 .delivery-methods {
-  padding-left: 37px;
   font-size: 18px;
   margin-bottom: 42px;
 }
@@ -1136,6 +1135,7 @@ img {
 .delivery-methods li {
   position: relative;
   margin-bottom: 12px;
+  padding-left: 35px;
 }
 
 .delivery-methods li::before {
@@ -1144,7 +1144,7 @@ img {
   height: 2px;
   position: absolute;
   top: 50%;
-  left: -35px;
+  left: 0;
   background-color: var(--basic-red);
   transform: translateY(-50%);
 }
