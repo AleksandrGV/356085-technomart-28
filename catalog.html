@@ -438,35 +438,37 @@
     </div>
   </footer>
   <!--Попап, форма заказа-->
-  <section class="popup visually-hidden">
+  <section class="popup popup-form visually-hidden">
     <h6 class="visually-hidden">Форма заказа</h6>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <ul class="list">
-        <li>
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-order">
+      <ul class="list popup-list-form">
+        <li class="item-popup item-popup-form">
           <label for="order-name">Ваше имя:</label>
           <input type="text" name="name" id="order-name" placeholder="Имя Фамилия" required>
         </li>
-        <li>
+        <li class="item-popup item-popup-form">
           <label for="order-email">Ваш e-mail:</label>
           <input type="email" name="email" id="order-email" placeholder="email@example.com" required>
         </li>
-        <li>
-          <label for="text-of-letter">Текст письма:</label>
-          <textarea id="text-of-letter" placeholder="В свободной форме" required></textarea>
+        <li class="item-popup item-popup-form">
+          <label for="text-of-letter" class="label-textarea">Текст письма:</label>
+          <textarea class="textarea-popup" id="text-of-letter" placeholder="В свободной форме" required></textarea>
         </li>
       </ul>
-      <button type="submit" class="button">Оформить заказ</button>
+      <div class="wrap-button-popup">
+        <button type="submit" class="button botton-form-popup">Оформить заказ</button>
+      </div>
     </form>
     <button type="button" class="button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
-  <!--Попап товар добавлен в корзину-->
-  <section class="popup visually-hidden">
+  <!--Попап товар добавлен корзину-->
+  <section class="popup notice-item-added-to-cart visually-hidden">
     <h6 class="visually-hidden">Уведомление товар добавлен в корзину</h6>
     <div class="main-basket">
-      <p>Товар добавлен в корзину!</p>
-      <ul class="list">
-        <li><a href="#!">Оформить заказ</a></li>
-        <li><a href="#!">Продолжить покупки</a></li>
+      <p class="text-popup">Товар добавлен в корзину!</p>
+      <ul class="list list-notice-item-added-to-cart">
+        <li><a href="#!" class="button button-checkout">Оформить заказ</a></li>
+        <li><a href="#!" class="button continue-shopping">Продолжить покупки</a></li>
       </ul>
     </div>
     <button type="button" class="button-close"><span class="visually-hidden">Закрыть</span></button>
