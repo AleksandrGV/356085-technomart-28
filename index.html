@@ -396,35 +396,37 @@
     </div>
   </footer>
   <!--Попап, форма заказа-->
-  <section class="popup visually-hidden">
+  <section class="popup popup-form visually-hidden">
     <h6 class="visually-hidden">Форма заказа</h6>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <ul class="list">
-        <li>
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-order">
+      <ul class="list popup-list-form">
+        <li class="item-popup item-popup-form">
           <label for="order-name">Ваше имя:</label>
           <input type="text" name="name" id="order-name" placeholder="Имя Фамилия" required>
         </li>
-        <li>
+        <li class="item-popup item-popup-form">
           <label for="order-email">Ваш e-mail:</label>
           <input type="email" name="email" id="order-email" placeholder="email@example.com" required>
         </li>
-        <li>
-          <label for="text-of-letter">Текст письма:</label>
-          <textarea id="text-of-letter" placeholder="В свободной форме" required></textarea>
+        <li class="item-popup item-popup-form">
+          <label for="text-of-letter" class="label-textarea">Текст письма:</label>
+          <textarea class="textarea-popup" id="text-of-letter" placeholder="В свободной форме" required></textarea>
         </li>
       </ul>
-      <button type="submit" class="button">Оформить заказ</button>
+      <div class="wrap-button-popup">
+        <button type="submit" class="button botton-form-popup">Оформить заказ</button>
+      </div>
     </form>
     <button type="button" class="button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <!--Попап товар добавлен корзину-->
-  <section class="popup visually-hidden">
+  <section class="popup notice-item-added-to-cart visually-hidden">
     <h6 class="visually-hidden">Уведомление товар добавлен в корзину</h6>
     <div class="main-basket">
-      <p>Товар добавлен в корзину!</p>
-      <ul class="list">
-        <li><a href="#!">Оформить заказ</a></li>
-        <li><a href="#!">Продолжить покупки</a></li>
+      <p class="text-popup">Товар добавлен в корзину!</p>
+      <ul class="list list-notice-item-added-to-cart">
+        <li><a href="#!" class="button button-checkout">Оформить заказ</a></li>
+        <li><a href="#!" class="button continue-shopping">Продолжить покупки</a></li>
       </ul>
     </div>
     <button type="button" class="button-close"><span class="visually-hidden">Закрыть</span></button>
@@ -432,10 +434,11 @@
   <!--Попап карта-->
   <section class="popup maps-popup visually-hidden">
     <h6 class="visually-hidden">Popup Карта</h6>
-    <a href="https://goo.gl/maps/Hqs4qyHb71zv3RyM7" target="_blank">
-      <img src="img/map-popup.png" width="943" height="449"
-        alt="город Санкт-Петербург, улица Большая Конюшенная, дом 19 ">
-    </a>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123607!2d30.32089461559027!3d59.93879686904853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1592156539729!5m2!1sru!2sru"
+      width="943" height="449" allowfullscreen title="город Санкт-Петербург, улица Большая Конюшенная, дом 19"
+      aria-hidden="false" tabindex="0">
+    </iframe>
     <button type="button" class="button-close"><span class="visually-hidden">Закрыть</span></button>
   </section>
 </body>
