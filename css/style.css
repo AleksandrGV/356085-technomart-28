@@ -1,7 +1,7 @@
 :root {
   --basic-white: #ffffff;
   --basic-dark-blue: #293449;
-  --basic-light: rgba(0, 0, 0, 0.0001);
+  --basic-light: rgba(0, 0, 0, 0);
   --basic-red: #EE3643;
   --basic-green: #63A63E;
   --basic-orange: #FFBF47;
@@ -33,6 +33,8 @@
   --special-scale: #D7DCDE;
   --special-bar: #00ca74;
   --special-toggle: #ababab;
+  --special-input-border: #f4f4f4;
+  --special-popup-bg: #F1F1F1;
 
   --white-rgb: 255, 255, 255;
   --white: rgb(var(--white-rgb));
@@ -209,6 +211,7 @@ img {
 
 .menu-top {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 15px;
 }
 
@@ -298,7 +301,7 @@ img {
   background-color: var(--basic-red);
   position: relative;
   width: 220px;
-  height: 42px;
+  height: 42px; 
 }
 
 .logo::after {
@@ -381,6 +384,7 @@ img {
 }
 
 .contact-tel {
+  width: 290px;
   margin-top: 30px;
   margin-left: 41px;
 }
@@ -419,6 +423,7 @@ img {
   color: var(--basic-violet);
   margin: 0;
   margin-top: 10px;
+  margin-right: 10px;
   text-align: center;
 }
 
@@ -1626,7 +1631,7 @@ img {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  display: inline-block; /*Без display иконок не видно*/
+  display: inline-block;
   vertical-align: top;
   margin-right: 5px;
 }
@@ -1659,4 +1664,194 @@ img {
 .footer .gold {
   color: var(--basic-gold);
   font-size: 16px;
+}
+
+/*Попапы общие стили*/
+.popup {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 620px;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--basic-white);
+  text-align: center;
+  margin: auto;
+  box-shadow: 0px 4px 20px var(--product-card-box-shadow);
+  padding-bottom: 0;
+  border-top: 7px solid var(--basic-red);
+  z-index: 20;
+}
+
+/*Попап форма*/
+
+.popup-form {
+  padding-top: 46px;
+  bottom: auto;
+}
+
+.form-order {
+  width: 100%;
+}
+
+.popup-list-form {
+  width: 460px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.item-popup-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.item-popup-form label {
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.item-popup-form input {
+  width: 200px;
+  padding-left: 12px;
+  padding-right: 8px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border: 2px solid  var(--special-gray);
+  border-radius: 3px;
+
+}
+
+.label-textarea {
+  margin-top: 13px;
+}
+
+.textarea-popup {
+  resize: none;
+  width: 431px;
+  min-height: 114px;
+  margin-bottom: 37px;
+  border: 2px solid var(--special-gray);
+  border-radius: 3px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.wrap-button-popup {
+  background-color: var(--special-input-border);
+  width: 100%;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.botton-form-popup {
+  width: 460px;
+  background-color: var(--basic-red);
+  border: none;
+  color: var(--basic-white);
+}
+
+/*Попап Уведомление товар добавлен в корзин*/
+
+.notice-item-added-to-cart {
+  font-size: 24px;
+  bottom: auto;
+  margin-top: 20px;
+  padding-top: 66px;
+
+}
+
+.text-popup {
+  position: relative;
+}
+
+.text-popup::before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icon-mark.svg");
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+
+.list-notice-item-added-to-cart {
+  background-color: var(--special-popup-bg);
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 0;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.button-checkout {
+  color: var(--basic-white);
+  padding-left: 47px;
+  padding-right: 46px;
+  background-color: var(--basic-red);
+  margin-right: 10px;
+}
+
+.continue-shopping {
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.continue-shopping:hover {
+  background-color: var(--basic-white);
+  outline: 2px solid var(--basic-gray);
+}
+
+.continue-shopping:active {
+  background-color: var(--basic-white);
+  opacity: 0.5;
+}
+
+.button-close {
+  width: 21px;
+  height: 21px;
+  background: none;
+  border: 0;
+  position: absolute;
+  top: 5px;
+  right: 11px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.button-close::before,
+.button-close::after {
+  content: "";
+  width: 19px;
+  height: 3px;
+  position: absolute;
+  top: 9px;
+  right: 0;
+  background-color: var(--basic-red);
+}
+
+.button-close::after {
+  transform: rotate(90deg);
+}
+
+/*Карта*/
+
+.maps-popup {
+  width: 945px;
+  bottom: auto;
+}
+
+.maps-popup iframe {
+  border: none;
 }
