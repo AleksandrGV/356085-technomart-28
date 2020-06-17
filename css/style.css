@@ -819,7 +819,7 @@ img {
   justify-content: space-between;
   padding-left: 28px;
   padding-right: 15px;
-  margin-top: 60px;
+  margin-top: 50px;
   background-color: var(--basic-light-beige);
 }
 
@@ -832,13 +832,20 @@ img {
 .list-popular-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 20px;
 }
+
+.list-popular-block li:nth-child(4n+4),
+.popular-card-manufacturers:nth-child(4n+4) {
+  margin-right: 0;
+}
+
 
 .list-popular-block li,
 .list-catalog li {
   display: flex;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 /*Карточки товаров*/
@@ -859,6 +866,12 @@ img {
   padding-right: 10px;
   padding-bottom: 21px;
   text-align: center;
+}
+
+.product-card img {
+  margin: 0;
+  object-fit: contain;
+  background-color: var(--basic-white);
 }
 
 .product-card:hover,
@@ -970,13 +983,13 @@ img {
   height: 145px;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .list-popular-manufacturers,
 .list-catalog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -1236,6 +1249,10 @@ img {
   padding-bottom: 30px;
   background-color: var(--basic-light-blue);
   color: var(--basic-violet);
+}
+
+.list-catalog li:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .list-catalog li {
@@ -1510,6 +1527,10 @@ img {
   background-color: var(--basic-gray-light);
 }
 
+.column-catalog {
+  width: 100%;
+}
+
 .catalog-subtitle,
 .sort {
   font-family: "PTSans", "Tahoma", sans-serif;
@@ -1607,7 +1628,7 @@ img {
 
 .footer-menu .list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer .contact-tel {
@@ -1627,6 +1648,16 @@ img {
 
 .footer-top-menu {
   margin-bottom: 34px;
+}
+
+.footer-top-menu li,
+.footer-bottom-menu li {
+  margin-right: 60px;
+}
+
+.footer-top-menu li:nth-child(5n+5),
+.footer-bottom-menu li:nth-child(4n+4) {
+  margin-right: 0;
 }
 
 .footer-bottom-menu {
