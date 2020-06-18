@@ -1735,7 +1735,7 @@ img {
 /*Попапы общие стили*/
 .popup {
   position: fixed;
-  top: 100px;
+  top: 60px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -1755,11 +1755,23 @@ img {
 /*Попап форма*/
 
 .popup-form {
+  display: none;
   padding-top: 46px;
   bottom: auto;
 }
 
-.form-order {
+.popup-form-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.8s;
+}
+
+.popup-form-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.form-feedback {
   width: 100%;
 }
 
@@ -1783,7 +1795,7 @@ img {
 }
 
 .item-popup-form input {
-  width: 200px;
+  width: 220px;
   padding-left: 12px;
   padding-right: 8px;
   padding-top: 7px;
@@ -1799,7 +1811,7 @@ img {
 
 .textarea-popup {
   resize: none;
-  width: 431px;
+  width: 460px;
   min-height: 114px;
   margin-bottom: 37px;
   border: 2px solid var(--special-gray);
@@ -1893,6 +1905,7 @@ img {
   top: 5px;
   right: 11px;
   cursor: pointer;
+  z-index: 5;
 }
 
 .button-close::before,
@@ -1911,13 +1924,77 @@ img {
   transform: rotate(-45deg);
 }
 
+.button-close:hover {
+  background-color: var(--basic-beige);
+  border-radius: 10px;
+  opacity: 0.6;
+}
+
 /*Карта*/
 
 .maps-popup {
+  display: none;
   width: 945px;
   bottom: auto;
 }
 
+.maps-popup-show {
+  display: block;
+}
+
+.maps-popup img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
 .maps-popup iframe {
+  position: relative;
+  z-index: 2;
   border: none;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
