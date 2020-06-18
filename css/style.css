@@ -1633,6 +1633,8 @@ img {
 .footer .contact-tel {
   font-size: 18px;
   color: var(--basic-white);
+  width: 325px;
+  margin-left: 5px;
 }
 
 .adress-footer {
