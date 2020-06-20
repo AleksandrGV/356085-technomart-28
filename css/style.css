@@ -1922,6 +1922,8 @@ img {
 
 .maps-popup-show {
   display: block;
+  animation-name: appearance;
+  animation-duration: 1s;
 }
 
 .maps-popup img {
@@ -1980,5 +1982,19 @@ img {
   60%,
   80% {
     transform: translateX(10px);
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
