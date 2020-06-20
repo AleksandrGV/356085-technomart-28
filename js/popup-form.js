@@ -20,7 +20,7 @@ try {
 
   /*Обработчик событй для отображения формы */
 
-  buttonOpenForm.addEventListener("click", function(evt) {
+  buttonOpenForm.addEventListener("click", (evt) => {
  /*Стандартное действие по умолчанию у ссылки переход на другую страницу. 
  Такое поведение нам не нужно, поэтому отключим его.*/   
     evt.preventDefault(); 
@@ -39,7 +39,7 @@ try {
 
   /*Обработчик событий для закрытия формы*/
 
-  popupClose.addEventListener("click", function(evt) {
+  popupClose.addEventListener("click", (evt) => {
     evt.preventDefault();
     popupForm.classList.remove("popup-form-show");
     popupForm.classList.remove("popup-form-error");
