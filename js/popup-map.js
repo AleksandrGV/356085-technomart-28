@@ -3,7 +3,7 @@ let popupMap = document.querySelector(".maps-popup");
 let buttonClose = popupMap.querySelector(".button-close");
 
 
-mapsLink.addEventListener("click", function(evt) {
+mapsLink.addEventListener("click", (evt) => {
   evt.preventDefault();
   popupMap.classList.add("maps-popup-show");
 });
