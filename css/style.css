@@ -1582,6 +1582,10 @@ img {
   font-weight: 400;
 }
 
+.about-rotary-hammers p {
+  font-family: "PTSans", "Tahoma", sans-serif;
+}
+
 /* Подвал */
 
 .footer {
@@ -1597,7 +1601,7 @@ img {
 .footer-top .footer-menu {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  padding-top: 25px;
 }
 
 .footer-menu a:hover,
@@ -1610,9 +1614,17 @@ img {
   opacity: 0.5;
 }
 
-.footer-menu .list {
-  display: flex;
-  flex-wrap: wrap;
+.footer-menu .footer-top-menu,
+.footer-menu .footer-bottom-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 60px;
+  margin-bottom: 35px;
+}
+
+.footer-menu .footer-bottom-menu {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 32px;
 }
 
 .footer .contact-tel {
@@ -1630,24 +1642,6 @@ img {
 .footer a {
   color: var(--basic-white);
   font-size: 18px;
-}
-
-.footer-top-menu {
-  margin-bottom: 34px;
-}
-
-.footer-top-menu li,
-.footer-bottom-menu li {
-  margin-right: 60px;
-}
-
-.footer-top-menu li:nth-child(5n+5),
-.footer-bottom-menu li:nth-child(4n+4) {
-  margin-right: 0;
-}
-
-.footer-bottom-menu {
-  margin-left: 32px;
 }
 
 .footer-bottom-menu a {
