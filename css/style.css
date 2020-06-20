@@ -1058,7 +1058,7 @@ img {
   color: var(--basic-white);
 }
 
-.tabs .active {
+.tabs .tabs-active {
   color: var(--basic-violet);
   background-color: var(--basic-white);
   box-shadow: 0 1px 0 var(--basic-white), inset 0 1px 0 var(--basic-white);

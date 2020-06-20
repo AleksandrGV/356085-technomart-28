@@ -1,3 +1,31 @@
+// Код popup Товар добавлен в корзину 
+
+let buy = document.querySelectorAll(".buy-tool");
+let productAddedCart = document.querySelector(".notice-item-added-to-cart");
+let buttonClose = productAddedCart.querySelector(".button-close");
+
+
+for(let i = 0; i < buy.length; i++) {
+  let buyClick = buy[i];
+    buyClick.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      productAddedCart.classList.add("notice-item-added-to-cart-show");
+    });
+  }
+
+buttonClose.addEventListener("click", (evt) => {
+  evt.preventDefault();
+  productAddedCart.classList.remove("notice-item-added-to-cart-show");
+});
+
+window.addEventListener("keydown", function(evt) {
+  if(evt.keyCode === 27) {
+    if(productAddedCart.classList.contains("notice-item-added-to-cart-show")) {
+     evt.preventDefault(); 
+      productAddedCart.classList.remove("notice-item-added-to-cart-show");
+    }
+  }
+});
 //Код popup form
 
 /*ищем подходящий селектор во всем документе*/
@@ -79,35 +107,6 @@ try {
     }
   });
 
-// Код popup Товар добавлен в корзину 
-
-let buy = document.querySelectorAll(".buy-tool");
-let productAddedCart = document.querySelector(".notice-item-added-to-cart");
-let buttonClose = productAddedCart.querySelector(".button-close");
-
-
-for(let i = 0; i < buy.length; i++) {
-  let buyClick = buy[i];
-    buyClick.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      productAddedCart.classList.add("notice-item-added-to-cart-show");
-    });
-    console.log(productAddedCart);
-  }
-
-buttonClose.addEventListener("click", (evt) => {
-  evt.preventDefault();
-  productAddedCart.classList.remove("notice-item-added-to-cart-show");
-});
-
-window.addEventListener("keydown", function(evt) {
-  if(evt.keyCode === 27) {
-    if(productAddedCart.classList.contains("notice-item-added-to-cart-show")) {
-     evt.preventDefault(); 
-      productAddedCart.classList.remove("notice-item-added-to-cart-show");
-    }
-  }
-});
 
 // Popup Map
 
@@ -134,4 +133,8 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+
+
+
 
