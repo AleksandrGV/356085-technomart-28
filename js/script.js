@@ -1,12 +1,12 @@
 // Код popup Товар добавлен в корзину 
 
-let buy = document.querySelectorAll(".buy-tool");
-let productAddedCart = document.querySelector(".notice-item-added-to-cart");
-let buttonClose = productAddedCart.querySelector(".button-close");
+var buy = document.querySelectorAll(".buy-tool");
+var productAddedCart = document.querySelector(".notice-item-added-to-cart");
+var buttonClose = productAddedCart.querySelector(".button-close");
 
 
-for(let i = 0; i < buy.length; i++) {
-  let buyClick = buy[i];
+for(var i = 0; i < buy.length; i++) {
+  var buyClick = buy[i];
     buyClick.addEventListener("click", function(evt) {
       evt.preventDefault();
       productAddedCart.classList.add("notice-item-added-to-cart-show");
@@ -30,20 +30,20 @@ window.addEventListener("keydown", function(evt) {
 
 /*ищем подходящий селектор во всем документе*/
 
-let buttonOpenForm = document.querySelector(".open-form-feedback"); 
-let popupForm = document.querySelector(".popup-form");
+var buttonOpenForm = document.querySelector(".open-form-feedback"); 
+var popupForm = document.querySelector(".popup-form");
 
 /*ищем подходящий селектор в форме*/
 
-let popupClose = popupForm.querySelector(".button-close"); 
-let formFeedback = popupForm.querySelector('.form-feedback');
-let nameField = popupForm.querySelector(".name-field");
-let emailField = popupForm.querySelector(".email-field");
+var popupClose = popupForm.querySelector(".button-close"); 
+var formFeedback = popupForm.querySelector('.form-feedback');
+var nameField = popupForm.querySelector(".name-field");
+var emailField = popupForm.querySelector(".email-field");
 
 /*Не все браузеры поддерживают localStorage поэтому проверим работоспособность.*/
 
-let isStorageSupport = true;
-let storage = "";
+var isStorageSupport = true;
+var storage = "";
 
 try {
   storage = localStorage.getItem("name");
@@ -110,9 +110,9 @@ try {
 
 // Popup Map
 
-let mapsLink = document.querySelector(".maps-link");
-let popupMap = document.querySelector(".maps-popup");
-let buttonCloseMap = popupMap.querySelector(".button-close");
+var mapsLink = document.querySelector(".maps-link");
+var popupMap = document.querySelector(".maps-popup");
+var buttonCloseMap = popupMap.querySelector(".button-close");
 
 
 mapsLink.addEventListener("click", (evt) => {
@@ -133,7 +133,6 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
-
 
 
 
