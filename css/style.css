@@ -800,8 +800,9 @@ img {
   display: flex;
   flex-direction: row-reverse;
   position: absolute;
-  top: 212px;
-  left: 292px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slider-dots li {
