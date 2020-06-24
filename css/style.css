@@ -838,12 +838,12 @@ img {
 }
 
 .slider-control .control-left {
-  left: 26px;
+  left: 25px;
 }
 
 .slider-control .control-right {
   transform: rotate(180deg);
-  right: 17px;
+  right: 25px;
 }
 
 /*Блок популярные товары*/
