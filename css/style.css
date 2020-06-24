@@ -61,8 +61,11 @@
   --product-card-box-shadow: rgba(var(--black-rgb), 0.15);
 
   --toggle-rgb: 171, 171, 171;
-  --toggle-gray: rgb(var(toggle-rgb));
+  --toggle-gray: rgb(var(--toggle-rgb));
   --toggle-gray-box-shadow: rgba(var(--toggle-rgb), 0.3);
+
+  --line-fieldset: rgb(var(--black-rgb));
+  --special-line-fieldset: rgba(var(--black-rgb), 0.1);
 }
 
 @font-face {
@@ -216,9 +219,9 @@ img {
   color: var(--basic-white);
   font-size: 18px;
   padding-top: 9px;
-  padding-left: 18px;
+  padding-left: 20px;
   padding-bottom: 9px;
-  padding-right: 14px;
+  padding-right: 15px;
 }
 
 .search-button:hover,
@@ -241,13 +244,15 @@ img {
 }
 
 .menu-top .bookmarks {
+  min-width: 160px;
   padding-left: 44px;
-  padding-right: 34px;
+  padding-right: 20px;
 }
 
 .menu-top .basket {
+  min-width: 140px;
   padding-left: 32px;
-  padding-right: 21px;
+  padding-right: 10px;
 }
 
 .basket-active {
@@ -344,8 +349,15 @@ img {
   background-color: var(--basic-white);
   color: var(--basic-black);
   padding: 11px;
+  padding-bottom: 11px;
   padding-left: 45px;
   outline: none;
+}
+
+@-moz-document url-prefix() {
+  .site-search:focus {
+    padding-bottom: 10px;
+  }
 }
 
 .site-search:focus + .search-button path {
@@ -385,9 +397,9 @@ img {
 }
 
 .contact-tel {
-  width: 290px;
+  width: 280px;
   margin-top: 30px;
-  margin-left: 35px;
+  margin-left: 50px;
 }
 
 .link-header {
@@ -401,9 +413,8 @@ img {
   padding-left: 74px;
   padding-top: 7px;
   padding-bottom: 8px;
-  padding-right: 40px;
+  padding-right: 42px;
   margin-bottom: 3px;
-  margin-right: 10px;
 }
 
 .link-header::before {
@@ -424,12 +435,14 @@ img {
   color: var(--basic-violet);
   margin: 0;
   margin-top: 10px;
-  margin-right: 12px;
+  margin-right: 5px;
   text-align: center;
 }
 
 .my-office {
+  width: 300px;
   margin-bottom: 5px;
+  padding-left: 23px;
 }
 
 .my-office a {
@@ -452,7 +465,7 @@ img {
 }
 
 .my-office .sign-in {
-  margin-right: 10px;
+  margin-right: 14px;
   padding-right: 23px;
   padding-left: 45px;
   padding-top: 10px;
@@ -474,13 +487,17 @@ img {
 /*Catalog my-office-page*/
 
 .contact-tel-page {
-  margin-left: 68px;
+  margin-left: 50px;
 }
 
 .my-office-page {
   margin-top: 33px;
   margin-bottom: 0;
-  padding-left: 10px;
+  padding-left: 0;
+}
+
+.melon-user {
+  display: flex;
 }
 
 .my-office-page .user-name {
@@ -565,8 +582,8 @@ img {
   font-size: 18px;
   padding-top: 17px;
   padding-bottom: 20px;
-  padding-left: 27px;
-  padding-right: 24px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .main-menu a:hover {
@@ -761,7 +778,7 @@ img {
   padding-bottom: 5px;
   padding-left: 27px;
   margin-bottom: 106px;
-  background: var(--button-bg-white);
+  background: var(--button-bg-black);
 }
 
 .subject-slider {
@@ -1342,6 +1359,7 @@ img {
   padding-top: 30px;
   padding-left: 30px;
   padding-bottom: 30px;
+  padding-right: 30px;
   background-color: var(--basic-light-blue);
   color: var(--basic-violet);
 }
@@ -1354,13 +1372,21 @@ img {
 }
 
 .list-sort {
+  width: 460px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sort .catalog-subtitle {
+  margin-right: auto;
+  padding: 0;
 }
 
 .item-sort a {
   color: var(--basic-black);
   opacity: 0.3;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .item-sort .sort-link {
@@ -1375,12 +1401,9 @@ img {
   border-bottom: 1px solid var(--basic-red);
 }
 
-.item-sort:not(.arrow) {
-  margin-right: 68px;
-}
-
-.item-sort:nth-child(3) {
-  margin-right: 46px;
+.item-sort-arrow .list-arrow {
+  display: flex;
+  list-style: none;
 }
 
 .list-sort .active-sort {
@@ -1392,12 +1415,8 @@ img {
   fill: var(--basic-red);
 }
 
-.list-sort .arrow {
+.list-arrow .arrow:first-child {
   margin-right: 20px;
-}
-
-.list-sort .arrow:last-child {
-  margin-right: 5px;
 }
 
 /*форма с фильтром*/
@@ -1416,7 +1435,7 @@ img {
 }
 
 .form-filter fieldset:first-child {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   margin-top: 10px;
 }
 
@@ -1437,7 +1456,7 @@ img {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 80%;
   height: 2px;
   background-color: var(--special-bar);
 }
@@ -1520,19 +1539,16 @@ img {
 /*Чекбокс и радио*/
 
 
-.fieldset-radio legend {
-  margin-bottom: 7px;
-}
 
 .list-form .item-form {
   line-height: 19px;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;  
 }
 
 .list-checkbox {
-  margin-top: 7px;
+  margin-top: 2px;
 }
 
 .item-form label {
@@ -1541,6 +1557,9 @@ img {
   position: relative;
   cursor: pointer;
   padding-left: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
 }
 
 .input-filter-checkbox + label::before {
@@ -1575,11 +1594,25 @@ img {
   opacity: 1;
 }
 
+.input-filter-checkbox:focus + label::before,
+.input-filter-checkbox:checked:focus + label::after,
+.input-filter-radio:focus + label::before {
+  outline: 1px solid var(--basic-black);
+}
+
+.label-form:hover {
+  opacity: 0.5;
+}
+
 .fieldset-line {
   margin-bottom: 15px;
+  background: var(--special-line-fieldset);
+  border: none;
+  height: 1px;
 }
 
 /*Radio*/
+
 
 .input-filter-radio + label::before {
   content: "";
@@ -1593,6 +1626,15 @@ img {
   border-radius: 50%;
   margin-right: 10px;
   transform: translateY(-50%);
+}
+
+.form-filter .fieldset-radio {
+  margin-top: 19px;
+  margin-bottom: 14px;
+}
+
+.fieldset-radio legend {
+  margin-bottom: 4px;
 }
 
 .list-form-radio {
@@ -1661,13 +1703,10 @@ img {
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 22px;
+  padding-right: 5px;
   margin: 0;
 }
 
-.sort .catalog-subtitle {
-  margin-right: 140px;
-  padding: 0;
-}
 
 /*Переключение страниц*/
 
@@ -1875,6 +1914,10 @@ img {
   font-size: 16px;
 }
 
+.footer .gold:active {
+  color: var(--basic-red);
+}
+
 /*Попапы общие стили*/
 .popup {
   position: fixed;
@@ -2073,7 +2116,6 @@ img {
 }
 
 .button-close:hover {
-  background-color: var(--basic-beige);
   border-radius: 10px;
   opacity: 0.6;
 }
