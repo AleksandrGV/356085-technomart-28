@@ -3,6 +3,7 @@
 var buy = document.querySelectorAll(".buy-tool");
 var productAddedCart = document.querySelector(".notice-item-added-to-cart");
 var buttonClose = productAddedCart.querySelector(".button-close");
+var popupOpacityAddedCart = document.querySelector(".opacity-added-cart");
 
 
 for(var i = 0; i < buy.length; i++) {
@@ -10,19 +11,26 @@ for(var i = 0; i < buy.length; i++) {
     buyClick.addEventListener("click", function(evt) {
       evt.preventDefault();
       productAddedCart.classList.add("notice-item-added-to-cart-show");
+      if("notice-item-added-to-cart-show") {
+        popupOpacityAddedCart.classList.add("opacity-added-cart-show");
+      } else {
+        popupOpacityAddedCart.classList.remove("opacity-added-cart-show");
+      }
     });
   }
 
-buttonClose.addEventListener("click", (evt) => {
+buttonClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   productAddedCart.classList.remove("notice-item-added-to-cart-show");
+  popupOpacityAddedCart.classList.remove("opacity-added-cart-show");
 });
 
 window.addEventListener("keydown", function(evt) {
   if(evt.keyCode === 27) {
-    if(productAddedCart.classList.contains("notice-item-added-to-cart-show")) {
+    if(productAddedCart.classList.contains("notice-item-added-to-cart-show") || popupOpacityAddedCart.classList.contains("opacity-added-cart-show")) {
      evt.preventDefault(); 
       productAddedCart.classList.remove("notice-item-added-to-cart-show");
+      popupOpacityAddedCart.classList.remove("opacity-added-cart-show");
     }
   }
 });
@@ -32,6 +40,7 @@ window.addEventListener("keydown", function(evt) {
 
 var buttonOpenForm = document.querySelector(".open-form-feedback"); 
 var popupForm = document.querySelector(".popup-form");
+var popupOpacity = document.querySelector(".popup-opacity");
 
 /*ищем подходящий селектор в форме*/
 
@@ -39,6 +48,7 @@ var popupClose = popupForm.querySelector(".button-close");
 var formFeedback = popupForm.querySelector('.form-feedback');
 var nameField = popupForm.querySelector(".name-field");
 var emailField = popupForm.querySelector(".email-field");
+
 
 /*Не все браузеры поддерживают localStorage поэтому проверим работоспособность.*/
 
@@ -53,13 +63,18 @@ try {
 
 /*Обработчик событй для отображения формы */
 
-  buttonOpenForm.addEventListener("click", (evt) => {
+  buttonOpenForm.addEventListener("click", function(evt) {
 
  /*Стандартное действие по умолчанию у ссылки переход на другую страницу. 
  Такое поведение нам не нужно, поэтому отключим его.*/   
 
     evt.preventDefault(); 
     popupForm.classList.add("popup-form-show");
+    if("popup-form-show") {
+      popupOpacity.classList.add("popup-opacity-show");
+    } else {
+      popupOpacity.classList.remove("popup-opacity-show");
+    }
     if(storage) {
       nameField.value = storage;
       emailField.focus();
@@ -73,10 +88,11 @@ try {
   
   /*Обработчик событий для закрытия формы*/
 
-  popupClose.addEventListener("click", (evt) => {
+  popupClose.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupForm.classList.remove("popup-form-show");
     popupForm.classList.remove("popup-form-error");
+    popupOpacity.classList.remove("popup-opacity-show");
   });
 
   /*Повесим обработчик отправки данных на форму и отменим его. */
@@ -99,10 +115,11 @@ try {
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (popupForm.classList.contains("popup-form-show")) {
+      if (popupForm.classList.contains("popup-form-show") || popupOpacity.classList.contains("popup-opacity-show")) {
         evt.preventDefault();
         popupForm.classList.remove("popup-form-show");
         popupForm.classList.remove("popup-form-error");
+        popupOpacity.classList.remove("popup-opacity-show");
       }
     }
   });
@@ -113,23 +130,31 @@ try {
 var mapsLink = document.querySelector(".maps-link");
 var popupMap = document.querySelector(".maps-popup");
 var buttonCloseMap = popupMap.querySelector(".button-close");
+var popupOpacityMap = document.querySelector(".popup-opacity-map");
 
 
-mapsLink.addEventListener("click", (evt) => {
+mapsLink.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupMap.classList.add("maps-popup-show");
+    if("maps-popup-show") {
+      popupOpacityMap.classList.add("popup-opacity-map-show");
+    } else {
+      popupOpacityMap.classList.remove("popup-opacity-map-show");
+    }
 });
 
 buttonCloseMap.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupMap.classList.remove("maps-popup-show");
+  popupOpacityMap.classList.remove("popup-opacity-map-show");
 });
 
 window.addEventListener("keydown", function(evt) {
   if(evt.keyCode === 27) {
-    if(popupMap.classList.contains("maps-popup-show")) {
+    if(popupMap.classList.contains("maps-popup-show") || popupOpacityMap.classList.contains("popup-opacity-map-show")) {
      evt.preventDefault(); 
       popupMap.classList.remove("maps-popup-show");
+      popupOpacityMap.classList.remove("popup-opacity-map-show");
     }
   }
 });
