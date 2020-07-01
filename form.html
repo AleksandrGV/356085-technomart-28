@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <title>HTML Academy: Техномарт Форма заказа</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Интернет магазин строительных материалов и инструментов для ремонта." />
+  <meta name="keywords" content="строительные материалы, инструмент, ремонт, строительство, техника" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="wrapper-page">
+
+  <!--Попап, форма обратной связи-->
+
+  <section class="popup form">
+    <h1>Форма заказа</h1>
+    <form action="https://echo.htmlacademy.ru" method="post" class="form-feedback">
+      <ul class="list popup-list-form">
+        <li class="item-popup item-popup-form">
+          <label for="feedback-name">Ваше имя:</label>
+          <input class="name-field" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+        </li>
+        <li class="item-popup item-popup-form">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input class="email-field" type="email" name="email" id="feedback-email" placeholder="email@example.com">
+        </li>
+        <li class="item-popup item-popup-form">
+          <label for="text-of-letter" class="label-textarea">Текст письма:</label>
+          <textarea class="textarea-popup message-field" id="text-of-letter" placeholder="В свободной форме"></textarea>
+        </li>
+      </ul>
+      <div class="wrap-button-popup">
+        <button type="submit" class="button botton-form-popup">Отправить</button>
+      </div>
+    </form>
+  </section>
+
+</body>
+
+</html>

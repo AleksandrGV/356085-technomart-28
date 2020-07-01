@@ -1963,7 +1963,7 @@ img {
   position: fixed;
   top: 60px;
   left: 0;
-  bottom: 0;
+  bottom: auto;
   right: 0;
   width: 620px;
   font-family: "Cuprum", "Tahoma", sans-serif;
@@ -1983,7 +1983,6 @@ img {
 .popup-form {
   display: none;
   padding-top: 46px;
-  bottom: auto;
 }
 
 .popup-form-show {
@@ -2066,8 +2065,10 @@ img {
 
 .notice-item-added-to-cart {
   display: none;
+}
+
+.item-added {
   font-size: 24px;
-  bottom: auto;
   margin-top: 20px;
   padding-top: 66px;
 
@@ -2165,7 +2166,6 @@ img {
 .maps-popup {
   display: none;
   width: 945px;
-  bottom: auto;
 }
 
 .maps-popup-show {
