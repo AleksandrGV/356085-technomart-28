@@ -33,6 +33,7 @@
   --special-toggle: #ababab;
   --special-input-border: #f4f4f4;
   --special-popup-bg: #F1F1F1;
+  --special-red-hover: #CA2C37;
 
   --white-rgb: 255, 255, 255;
   --white: rgb(var(--white-rgb));
@@ -181,7 +182,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--basic-red);
+  background-color: var(--special-red-hover);
 }
 
 .button:active {
@@ -236,6 +237,7 @@ img {
 .menu-top .bookmarks:active,
 .menu-top .basket:active {
   background-color: var(--special-dark-blue);
+  opacity: 0.5;
 }
 
 .menu-top .bookmarks,
@@ -300,6 +302,7 @@ img {
 
 .menu-top .checkout:active {
   background-color: var(--basic-green);
+  opacity: 0.5;
 }
 
 .logo {
@@ -309,6 +312,10 @@ img {
   position: relative;
   width: 220px;
   height: 42px; 
+}
+
+.logo:active {
+  background-color: var(--special-red);
 }
 
 .logo::after {
@@ -462,6 +469,10 @@ img {
 
 .my-office a:hover {
   color: var(--basic-red);
+}
+
+.my-office .user-name:hover {
+  color: var(--basic-black);
 }
 
 .my-office a:active {
@@ -1406,7 +1417,7 @@ img {
   margin-right: 5px;
 }
 
-.item-sort .sort-link {
+.item-sort a {
   border-bottom: 1px dotted var(--basic-red);
 }
 
@@ -1414,7 +1425,11 @@ img {
   opacity: 1;
 }
 
-.item-sort a:not(.arrow-link):hover {
+.item-sort .active-sort:hover {
+  color: var(--basic-black);
+}
+
+.item-sort a:hover {
   border-bottom: 1px solid var(--basic-red);
 }
 
@@ -1426,6 +1441,7 @@ img {
 .list-sort .active-sort {
   color: var(--basic-red);
   opacity: 1;
+  border: none;
 }
 
 .active-sort path {
@@ -1434,6 +1450,15 @@ img {
 
 .list-arrow .arrow:first-child {
   margin-right: 20px;
+}
+
+.list-arrow .arrow-link,
+.list-arrow .arrow-link:hover {
+  border: none;
+}
+
+.active-sort:hover path {
+  fill: var(--basic-black);
 }
 
 /*форма с фильтром*/
@@ -1617,8 +1642,8 @@ img {
   outline: 1px solid var(--basic-black);
 }
 
-.label-form:hover {
-  opacity: 0.5;
+.label-form:active {
+  opacity: 0.3;
 }
 
 .fieldset-line {
@@ -1674,7 +1699,8 @@ img {
   margin-right: 10px;
 }
 
-.input-filter-radio + label:hover::before {
+.input-filter-radio + label:hover::before,
+.input-filter-radio:checked + label:hover::before {
   border-color: var(--special-dark-gray);
 }
 
@@ -1684,10 +1710,6 @@ img {
 
 .label-form:hover path {
   fill: var(--special-dark-gray);
-}
-
-.item-form .label-form:active {
-  opacity: 0.3;
 }
 
 .button-form {
@@ -1823,6 +1845,7 @@ img {
 }
 
 .footer-menu a:active {
+  text-decoration: none;
   opacity: 0.5;
 }
 
@@ -1931,6 +1954,7 @@ img {
 }
 
 .footer .gold:active {
+  text-decoration: none;
   color: var(--basic-red);
 }
 
