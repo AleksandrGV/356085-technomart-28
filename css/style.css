@@ -987,7 +987,8 @@ img {
   display: none;
 }
 
-.product-card:hover > .buy-to-bookmarks {
+.product-card:hover > .buy-to-bookmarks,
+.product-card:focus > .buy-to-bookmarks {
   display: flex;
   flex-direction: column;
 }
