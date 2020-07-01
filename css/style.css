@@ -247,15 +247,15 @@ img {
 }
 
 .menu-top .bookmarks {
-  min-width: 160px;
-  padding-left: 44px;
-  padding-right: 20px;
+  min-width: 167px;
+  padding-left: 46px;
+  padding-right: 12px;
 }
 
 .menu-top .basket {
-  min-width: 140px;
-  padding-left: 32px;
-  padding-right: 10px;
+  min-width: 136px;
+  padding-left: 35px;
+  padding-right: 5px;
 }
 
 .basket-active {
@@ -271,7 +271,6 @@ img {
   opacity: 0.3;
   position: absolute;
   top: 50%;
-  left: 20px;
   transform: translateY(-50%);
 }
 
@@ -279,6 +278,7 @@ img {
   width: 14px;
   height: 16px;
   background-image: url("../img/bookmark-icon.svg");
+  left: 22px;
 }
 
 .menu-top .basket::before {
@@ -286,11 +286,12 @@ img {
   height: 15px;
   background-image: url("../img/icon-basket.svg");
   background-color: transparent;
-  left: 10px;
+  left: 12px;
 }
 
 .menu-top .checkout {
   background-color: var(--basic-green);
+  padding-right: 12px;
 }
 
 .menu-top .checkout:hover {
@@ -494,7 +495,7 @@ img {
 }
 
 .my-office-page {
-  margin-top: 33px;
+  margin-top: 25px;
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -535,7 +536,7 @@ img {
 .orders-cabinet {
   text-align: center;
   margin-right: 24px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .orders-cabinet .link {
@@ -879,15 +880,21 @@ img {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 31px;
-  padding-right: 15px;
+  padding-right: 13px;
   margin-top: 60px;
   background-color: var(--basic-light-beige);
 }
 
 .popular-block .button {
-  padding-top: 10px;
+  padding-top: 8px;
   padding-left: 40px;
-  padding-right: 38px;
+  padding-bottom: 6px;
+  padding-right: 40px;
+}
+
+.popular-block .button-goods {
+  padding-left: 24px;
+  padding-right: 22px;
 }
 
 .popular-block h2 {
@@ -902,7 +909,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   align-content: start;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .list-popular-block li,
@@ -921,9 +928,9 @@ img {
   font-weight: 700;
   width: 220px;
   border: 1px solid var(--basic-gray);
-  padding-top: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 15px;
   text-align: center;
 }
@@ -952,8 +959,8 @@ img {
   font-size: 18px;
   line-height: 22px;
   z-index: 5;
-  margin-top: 10px;
-  margin-bottom: 2px;
+  margin-top: 12px;
+  margin-bottom: 0;
   margin-left: 6px;
 }
 
@@ -965,7 +972,7 @@ img {
   background-color: var(--basic-white);
   width: 184px;
   min-height: 164px;
-  padding-top: 45px;
+  padding-top: 36px;
   display: none;
 }
 
@@ -975,6 +982,8 @@ img {
 }
 
 .buy-to-bookmarks a {
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  font-size: 14px;
   width: 135px;
   border-radius: 2px;
   margin: 0 auto;
@@ -985,7 +994,7 @@ img {
   margin-bottom: 10px;
   background-color: var(--basic-green);
   box-shadow: inset 0 -3px 0 var(--special-dark-green);
-  text-align: end;
+  padding-left: 36px;
 }
 
 .buy-to-bookmarks .buy-tool::before {
@@ -1011,6 +1020,8 @@ img {
   background-color: var(--basic-white);
   border: 3px solid var(--basic-green);
   color: var(--basic-violet);
+  padding-top: 6px;
+  padding-bottom: 3px;
 }
 
 .buy-to-bookmarks .bookmarks-tool:hover {
@@ -1026,13 +1037,15 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
 .old-price {
   font-size: 17px;
   color: var(--basic-gray-dark);
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .current-price {
@@ -1044,11 +1057,11 @@ img {
   background-position: center;
   text-decoration: none;
   padding-top: 11px;
-  padding-left: 15px;
+  padding-left: 17px;
   padding-bottom: 11px;
   padding-right: 25px;
-  margin-left: 22px;
-  margin-right: 5px;
+  margin-left: 28px;
+  margin-right: 12px;
 }
 
 .product-card .new {
@@ -1096,7 +1109,7 @@ img {
   margin-bottom: 28px;
 }
 
-.service p,
+/* .service p, */
 .about-company p,
 .maps p {
   font-family: "PTSans", "Tahoma", sans-serif;
@@ -1187,6 +1200,7 @@ img {
 }
 
 .text-tabs {
+  font-family: "PTSans", "Tahoma", sans-serif;
   line-height: 25px;
   width: 315px;
   padding-right: 35px;
@@ -1270,7 +1284,7 @@ img {
 .maps-slogan {
   max-width: 180px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .about-company .button {
@@ -1283,7 +1297,7 @@ img {
 
 .maps .maps-link {
   background-color: transparent;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .open-form-feedback {
@@ -1352,9 +1366,9 @@ img {
 .list-catalog {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px 21px;
+  gap: 19px 20px;
   margin-top: 25px;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
 }
 
 .catalog .heading {
@@ -1427,7 +1441,7 @@ img {
 .form-filter {
   font-family: "PTSans", "Tahoma", sans-serif;
   min-width: 220px;
-  margin-right: 20px;
+  margin-right: 23px;
   padding-left: 3px;
 }
 
@@ -1705,7 +1719,7 @@ img {
   text-transform: uppercase;
   padding-top: 9px;
   padding-bottom: 10px;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-right: 5px;
   margin: 0;
 }
@@ -1725,9 +1739,9 @@ img {
   color: var(--basic-dark);
   border: 1px solid var(--basic-gray-light);
   border-radius: 2px;
-  padding-top: 6px;
+  padding-top: 7px;
   padding-bottom: 6px;
-  padding-left: 15px;
+  padding-left: 14px;
   padding-right: 15px;
   margin-right: 10px;
 }
@@ -1781,7 +1795,7 @@ img {
 .footer-top {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .footer-top .logo {
@@ -1816,8 +1830,8 @@ img {
 .footer-menu .footer-bottom-menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 60px;
-  margin-bottom: 35px;
+  grid-column-gap: 59px;
+  margin-bottom: 33px;
 }
 
 .footer-menu .footer-bottom-menu {
@@ -1863,14 +1877,14 @@ img {
 .footer-bottom p {
   color: var(--basic-white);
   font-size: 16px;
-  margin-top: 19px;
+  margin-top: 18px;
   margin-left: 4px;
   line-height: 20px;
 }
 
 .socials {
   display: flex;
-  margin-left: 70px;
+  margin-left: 57px;
 }
 
 .social-icon {
@@ -1883,7 +1897,6 @@ img {
   height: 44px;
   display: inline-block;
   vertical-align: top;
-  margin-right: 2px;
   margin-top: 8px;
 }
 
@@ -1905,11 +1918,11 @@ img {
 }
 
 .feedback-email {
-  padding-left: 20px;
+  padding-left: 14px;
 }
 
 .developer-site {
-  padding-left: 44px;
+  padding-left: 45px;
 }
 
 .footer .gold {
