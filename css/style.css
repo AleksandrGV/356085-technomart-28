@@ -988,7 +988,7 @@ img {
 }
 
 .product-card:hover > .buy-to-bookmarks,
-.product-card:focus > .buy-to-bookmarks {
+.product-card:focus-within > .buy-to-bookmarks {
   display: flex;
   flex-direction: column;
 }
@@ -2265,4 +2265,14 @@ img {
   100% {
     opacity: 1;
   }
+}
+
+/*Стили для страницы с формой*/
+
+.page-form .popup,
+.page-item-added .popup {
+  position: relative;
+  top: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
